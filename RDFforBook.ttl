@@ -1,0 +1,27 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/>.
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#>. (?)
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.w3.org/ThebLODyChamber/Book/TheBloodyChamber> a schema:Book ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q882388> ;
+    dc:creator <https://www.w3.org/ThebLODyChamber/Person/AngelaCarter> ;
+    schema:publisher <https://www.w3.org/ThebLODyChamber/Organization/VictorGollantzLtd> ;
+    fabio:hasPublicationYear <https://www.w3.org/ThebLODyChamber/Date/1979> ;
+    bibtext:hasLanguage <https://www.w3.org/ThebLODyChamber/Language/English> ;
+    crm:P67_refers_to <https://www.w3.org/ThebLODyChamber/ArtisticGenre/Postmodernism> ;
+    crm:P67_refers_to <https://www.w3.org/ThebLODyChamber/Group/Feminism> ;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/WolfAlice>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheErlKing>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheCompanyOfWolves>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheTigersBride>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheBloodyChamber>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheLadyOfTheHouseOfLove>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheSnowChild>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/PussInBoots>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheCourtshipOfMrLion>;
+    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheWerewolf>;
+
+    to be updated

@@ -1,0 +1,42 @@
+@base <https://github.com/thebloodychamber/thebloodychamber> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> ???.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix schema: <http://schema.org> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcndl: <http://ndl.go.jp/dcndl/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+owl prefix ekle!!
+rdfs prefix ekle!!
+
+
+<https://github.com/thebloodychamber/thebloodychamber/item/Spare_rib> a dbpedia-owl:Magazine ;
+	rdfs:label "Spare Rib: the new women's magazine"@en
+	owl:sameAs <https://www.wikidata.org/wiki/Q7573565> ;	#Spare Rib Magazine
+    	crm:P67_refers_to <https://www.wikidata.org/wiki/Q830183> ; #Eve
+    	dbpedia-owl:endDate "1993"^^xsd:gYear ;
+    	dbpedia-owl:influenced <https://github.com/thebloodychamber/thebloodychamber/entity/Re-reading_Spare_Rib>; #Re-reading Spare Rib 
+    	dcterms:issued "1972-1990"^^xsd:string ;
+    	dbpedia-owl:frequencyOfPublication <https://www.wikidata.org/wiki/Q88566195> ; #Monthly
+    	schema:genre <https://www.wikidata.org/wiki/Q1002697>; #Periodical
+    	schema:about <https://www.wikidata.org/wiki/Q7252> ; #Feminism
+    	dcndl:digitizedPublisher <https://www.wikidata.org/wiki/Q23308> ; #British Library
+    	schema:publisher <https://github.com/thebloodychamber/thebloodychamber/entity/Spare_Rib_Ltd> ; #Spare Rib Ltd.
+    	fabio:hasPlaceOfPublication <https://www.wikidata.org/wiki/Q84> ; #London
+    	bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860>. #English
+
+<https://github.com/thebloodychamber/thebloodychamber/entity/Eve> a dbpedia-owl:FictionalCharacter ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q830183> ; #Eve
+	frbrer:P2026 <https://www.wikidata.org/wiki/Q1845>.  #The Bible
+
+<https://github.com/thebloodychamber/thebloodychamber/entity/Spare_Rib_Ltd> a schema:Organization ;
+	dbpedia-owl:established <https://www.wikidata.org/wiki/Q84>. #Spare Rib Ltd.
+
+<https://github.com/thebloodychamber/thebloodychamber/entity/Angela_Carter> a foaf:Person ;
+	owl:SameAs <https://www.wikidata.org/wiki/Q234519> ; #Angela Carter
+	crm:P11i_participated_in <https://github.com/thebloodychamber/thebloodychamber/item/Spare_rib>. #Spare Rib Magazine
+
+<https://github.com/thebloodychamber/thebloodychamber/entity/Carmen_Callil> a foaf:Person ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q5043434> ;
+	schema:founder <https://github.com/thebloodychamber/thebloodychamber/entity/Spare_Rib_Ltd> #Spare Rib Ltd.

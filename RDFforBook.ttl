@@ -1,27 +1,35 @@
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/>.
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#>. (?)
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia-owl: <> .
 
-<https://www.w3.org/ThebLODyChamber/Book/TheBloodyChamber> a schema:Book ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q882388> ;
-    dc:creator <https://www.w3.org/ThebLODyChamber/Person/AngelaCarter> ;
-    schema:publisher <https://www.w3.org/ThebLODyChamber/Organization/VictorGollantzLtd> ;
-    fabio:hasPublicationYear <https://www.w3.org/ThebLODyChamber/Date/1979> ;
-    bibtext:hasLanguage <https://www.w3.org/ThebLODyChamber/Language/English> ;
-    crm:P67_refers_to <https://www.w3.org/ThebLODyChamber/ArtisticGenre/Postmodernism> ;
-    crm:P67_refers_to <https://www.w3.org/ThebLODyChamber/Group/Feminism> ;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/WolfAlice>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheErlKing>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheCompanyOfWolves>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheTigersBride>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheBloodyChamber>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheLadyOfTheHouseOfLove>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheSnowChild>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/PussInBoots>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheCourtshipOfMrLion>;
-    crm:P148_has_component <https://www.w3.org/ThebLODyChamber/ShortStory/TheWerewolf>;
-
-    to be updated
+<https://github.com/thebloodychamber/thebloodychamber/Book/TheBloodyChamber> a schema:Book ;
+    owl:sameAs <http://viaf.org/viaf/188305399> ; # authority control for The Bloody Chamber
+    dcterms:creator <http://viaf.org/viaf/34454299> ; # authority control for Angela Carter
+    schema:publisher <http://viaf.org/viaf/154749751> ; # authority control for the publishing house Victor Gollancz Ltd
+    fabio:hasPublicationYear "1979"^^xsd:date ;
+    bibtext:hasLanguage <https:/github.com/thebloodychamber/thebloodychamberwww.wikidata.org/wiki/Q1860> ; #wikidata page for English language
+    crm:P67_refers_to <https://www.wikidata.org/wiki/Q47783> ; #wikidata page for Postmodernism
+    crm:P67_refers_to <https://www.wikidata.org/wiki/Q7252> ; #wikidata page for Feminism
+    dbpedia-owl:award <https://www.wikidata.org/wiki/Q5090221> ; #wikidata page for Cheltenham Prize for Literature
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheBloodyChamber>;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/Bluebeard> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheCourtshipOfMrLion>;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/BeautyandtheBeast> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheTigersBride> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/BeautyandtheBeast> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/Puss-in-boots> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/PussInBoots> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheErlKing> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheSnowChild> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheLadyOfTheHouseOfLove> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheSleepingBeautyInTheWoods> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheWerewolf> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/LittleRedRidingHood> ;
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheCompanyOfWolves> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/LittleRedRidingHood> ;    
+    crm:P148_has_component <https://github.com/thebloodychamber/thebloodychamber/ShortStory/WolfAlice> ;
+    schema:isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/LittleRedRidingHood> .

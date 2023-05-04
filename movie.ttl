@@ -16,7 +16,7 @@
 	owl:sameAs <https://www.wikidata.org/wiki/Q609936>;
 	dcterms:creator <http://viaf.org/viaf/34454299>;
 	dcterms:creator <http://viaf.org/viaf/34461426>;
-	dcterms:creator <http://viaf.org/viaf/85368254>;
+	schema:director <http://viaf.org/viaf/85368254>;
 	bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860>;
 	schema::genre <https://www.wikidata.org/wiki/Q130232>,
 				  <https://www.wikidata.org/wiki/Q157394>,

@@ -1,0 +1,70 @@
+@base <https://github.com/thebloodychamber/thebloodychamber> .
+
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
+@prefix fabio: <http://purl.org/spar/fabio/> . 
+@prefix schema: <http://schema.org/> . 
+@prefix frbrer: <http://iflastandards.info/ns/fr/frbr/frbrer> .
+@prefix agrelon: <https://d-nb.info/standards/elementset/agrelon> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix timeline: <http://motools.sf.net/timeline/timeline.html> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix event: <http://motools.sf.net/event/event.html> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+<https://github.com/thebloodychamber/thebloodychamber/Book/StrangeWorldsTheVisionOfAngelaCarter> a schema:Book ;
+    bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860> ; #page of English language
+    fabio:title "Strange worlds: the vision of Angela Carter"^^xsd:string ;
+    schema:publisher <http://viaf.org/viaf/69155564095213002104> ; #viaf page of the Sansom & Company publishing house
+    fabio:hasPlaceOfPublication <https://sws.geonames.org/2654675> ; #page of Bristol
+    fabio:hasPublicationYear "2016"^^xsd:date ;
+    schema:genre <https://www.wikidata.org/wiki/Q780605> ; #page of the genre "exhibition catalogue"
+    schema:editor <https://github.com/thebloodychamber/thebloodychamber/Person/FionaRobinson> , #Fiona Robinson
+                  <https://github.com/thebloodychamber/thebloodychamber/Person/MarieMulveyRoberts> ; #Marie Mulvey Roberts
+    fabio:hasPageCount "56"^^xsd:int ;
+    frbrer:P2044 <https://github.com/thebloodychamber/thebloodychamber/Book/BloodyChamber> ; #book "The Bloody Chamber"
+    schema:about <http://viaf.org/viaf/34454299> ; #Angela Carter
+    frbrer:P3034 <https://github.com/thebloodychamber/thebloodychamber/Event/StrangeWorldsTheVisionOfAngelaCarter> ; #exhibition about Angela Carter and her works
+    agrelon:HasCooperator <https://github.com/thebloodychamber/thebloodychamber/Person/CarmenCallil> . #Carmen Callil
+
+<https://github.com/thebloodychamber/thebloodychamber/Event/StrangeWorldsTheVisionOfAngelaCarter> a event:Event ;
+    timeline:start "2016-12-10"^^xsd:date ;
+    timeline:end "2017-03-19"^^xsd:date .
+
+<https://github.com/thebloodychamber/thebloodychamber/Person/CarmenCallil> a foaf:Person ; #Carmen Callil
+    owl:sameas <http://viaf.org/viaf/5064157> ; #viaf page of Carmen Callil
+    foaf:interest <https://dbpedia.org/page/Feminism> ; #page of feminism
+    schema:founder <http://viaf.org/viaf/179433603> , #Spare Rib magazin
+                   <http://viaf.org/viaf/170596537> . #Feministic publisher Virago Press
+
+<https://github.com/thebloodychamber/thebloodychamber/Organisation/ViragoPress> a dbo:Organisation ; #Feministic publisher Virago Press
+    owl:sameas <http://viaf.org/viaf/170596537> ; #viaf page of Virago Press
+    schema:legalName "Virago Press"^^xsd:string ;
+    schema:foundingDate "1973"^^xsd:date ;
+    schema:location <https://sws.geonames.org/2308696> ; #page of London
+    rico:isRelatedTo <https://dbpedia.org/page/Feminism> . #feminism
+
+<https://github.com/thebloodychamber/thebloodychamber/Person/AngelaCarter> a foaf:Person ;
+    owl:sameas <http://viaf.org/viaf/34454299> ; #viaf page of Angela Carter
+    schema:worksFor <http://viaf.org/viaf/170596537> ; #Virago Press
+    rico:hasOrHadWorkRelationWith <http://viaf.org/viaf/5064157> . #Carmen Callil
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

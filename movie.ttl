@@ -1,0 +1,29 @@
+@base <https://github.com/thebloodychamber/thebloodychamber> .
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============== ITEMS ==================
+
+# === Movie ===
+
+<https://github.com/thebloodychamber/thebloodychamber/Movie/TheCompanyOfWolves> a schema:Movie ; 
+	owl:sameAs <https://www.wikidata.org/wiki/Q609936>;
+	dcterms:creator <http://viaf.org/viaf/34454299>; # URI for ‘Angela Carter’ from VIAF
+	dcterms:creator <http://viaf.org/viaf/34461426>; # URI for ‘Charles Perrault’ from VIAF
+	schema:director <http://viaf.org/viaf/85368254>; # URI for ‘Neil Jordan’ from VIAF
+	bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860>; # URI for ‘English language’ from wikidata
+	schema::genre <https://www.wikidata.org/wiki/Q130232>, # URI for 'drama genre’ from wikidata
+				  <https://www.wikidata.org/wiki/Q157394>, # URI for 'fantasy genre’ from wikidata
+				  <https://www.wikidata.org/wiki/Q200092>; # URI for 'horror genre’ from wikidata
+	schema::locationCreated <https://www.wikidata.org/wiki/Q21>; # URI for 'England’ from wikidata
+	schema::releaseDate "1984"^^xsd:gYear;
+	schema::duration "95 mins"^^xsd:string;
+	schema::isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheCompanyOfWolves>;
+	schema::actor <https://www.wikidata.org/wiki/Q467760> ; # URI for 'Sarah Patterson’ from wikidata
+	schema::productionCompany <https://www.wikidata.org/wiki/Q3149951>. # URI for 'ITC Production’ from wikidata

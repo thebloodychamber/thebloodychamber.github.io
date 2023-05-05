@@ -1,5 +1,5 @@
 @base <https://github.com/thebloodychamber/thebloodychamber> .
-@prefix dbpedia-owl: <http://dbpedia.org/ontology/> ???.
+@prefix dbpedia-owl: <http://dbpedia.org/owl/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix schema: <http://schema.org> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -7,13 +7,16 @@
 @prefix fabio: <http://purl.org/spar/fabio> .
 @prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-owl prefix ekle!!
-rdfs prefix ekle!!
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frbrer: <http://iflastandards.info/ns/fr/frbr/frbrer> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
 <https://github.com/thebloodychamber/thebloodychamber/item/Spare_rib> a dbpedia-owl:Magazine ;
-	rdfs:label "Spare Rib: the new women's magazine"@en
-	owl:sameAs <https://www.wikidata.org/wiki/Q7573565> ;	#Spare Rib Magazine
+	rdfs:label "Spare Rib: the new women's magazine"@en ;
+	owl:sameAs <http://viaf.org/viaf/179433603> ;	#Spare Rib Magazine
     	crm:P67_refers_to <https://www.wikidata.org/wiki/Q830183> ; #Eve
     	dbpedia-owl:endDate "1993"^^xsd:gYear ;
     	dbpedia-owl:influenced <https://github.com/thebloodychamber/thebloodychamber/entity/Re-reading_Spare_Rib>; #Re-reading Spare Rib 
@@ -34,9 +37,9 @@ rdfs prefix ekle!!
 	dbpedia-owl:established <https://www.wikidata.org/wiki/Q84>. #Spare Rib Ltd.
 
 <https://github.com/thebloodychamber/thebloodychamber/entity/Angela_Carter> a foaf:Person ;
-	owl:SameAs <https://www.wikidata.org/wiki/Q234519> ; #Angela Carter
+	owl:SameAs <http://viaf.org/viaf/34454299> ; #Angela Carter
 	crm:P11i_participated_in <https://github.com/thebloodychamber/thebloodychamber/item/Spare_rib>. #Spare Rib Magazine
 
 <https://github.com/thebloodychamber/thebloodychamber/entity/Carmen_Callil> a foaf:Person ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q5043434> ;
-	schema:founder <https://github.com/thebloodychamber/thebloodychamber/entity/Spare_Rib_Ltd> #Spare Rib Ltd.
+	owl:sameAs <http://viaf.org/viaf/5064157> ; #Carmen Callil
+	schema:founder <https://github.com/thebloodychamber/thebloodychamber/entity/Spare_Rib_Ltd>. #Spare Rib Ltd.

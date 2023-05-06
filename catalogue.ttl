@@ -49,22 +49,3 @@
     owl:sameas <http://viaf.org/viaf/34454299> ; #viaf page of Angela Carter
     schema:worksFor <http://viaf.org/viaf/170596537> ; #Virago Press
     rico:hasOrHadWorkRelationWith <http://viaf.org/viaf/5064157> . #Carmen Callil
-
-
-                   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

@@ -1,0 +1,12 @@
+﻿Subject,Predicate,Object
+Manuscript notes and drafts of The Bloody Chamber,rdf:type,Manuscript
+Manuscript notes and drafts of The Bloody Chamber,bibtex:hasLanguage,English
+Manuscript notes and drafts of The Bloody Chamber,dcterms:isPartOf,Angela Carter Papers: 'The Bloody Chamber and Other Short Stories' 1
+Manuscript notes and drafts of The Bloody Chamber,dcterms:hasFormat,Drafts
+Manuscript notes and drafts of The Bloody Chamber,schema:holdingArchive,British Library
+Manuscript notes and drafts of The Bloody Chamber,dcterms:creator,Angela Carter
+Manuscript notes and drafts of The Bloody Chamber,schema:about,The Bloody Chamber
+Angela Carter,crm:P11i_participated_in,Spare ribs 
+Angela Carter,schema:birthPlace,England
+Angela Carter,dbpedia-owl:residence,Japan
+England,dbpedia-owl:capital,London

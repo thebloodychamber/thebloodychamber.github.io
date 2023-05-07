@@ -1,0 +1,12 @@
+﻿Subject,Predicate,Object
+Japan,rdf:type,Country
+Japan,dbpedia-owl:capital,Tokyo
+Japan,dbpedia-owl:officialLanguage,Japanese
+Japan,pext:hasCurrency,Japanese Yen
+Japan,dbpedia-owl:knownFor,Sushi
+Japan,schema:organizer,Yamayaki
+Japan,dbpedia-owl:created,Ukiyo-e
+Japan,dbpedia-owl:created,Karate
+Japan,dbpedia-owl:created,Noh
+The Bloody Chamber,dbpedia-owl:influencedBy,Japan
+Shaking a Leg : Journalism and Writings,dbpedia-owl:influencedBy,Japan

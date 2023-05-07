@@ -1,0 +1,70 @@
+@base <https://w3c.org/thebLODychamber> .
+@prefix dbpedia-owl: <http://dbpedia.org/owl/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix schema: <http://schema.org> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcndl: <http://ndl.go.jp/dcndl/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frbrer: <http://iflastandards.info/ns/fr/frbr/frbrer> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dbpedia: <https://dbpedia.org/page/> .
+@prefix gn: <https://www.geonames.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+</Magazine/SpareRib> a dbpedia-owl:Magazine ;
+	rdfs:label "Spare Rib: the new women's magazine"@en ;
+	owl:sameAs viaf:179433603 ;	#Spare Rib Magazine
+    	crm:P67_refers_to </Character/Eve> ; #Eve
+    	dbpedia-owl:endDate "1993"^^xsd:gYear ;
+    	dbpedia-owl:influenced </Book/Re-readingSpareRib> ; #Re-reading Spare Rib 
+    	dcterms:issued "1972-1990"^^xsd:string ;
+    	dbpedia-owl:frequencyOfPublication </Frequency/Monthly> ; #Monthly
+    	schema:genre </Genre/Periodical> ; #Periodical
+    	schema:about </Group/Feminism> ; #Feminism
+    	dcndl:digitizedPublisher </Organization/BritishLibrary> ; #British Library
+    	schema:publisher </Organization/SpareRibLtd> ; #Spare Rib Ltd.
+    	fabio:hasPlaceOfPublication </Place/London> ; #London
+    	bibtex:hasLanguage </Language/English>. #English
+
+</Character/Eve> a dbpedia-owl:FictionalCharacter ;
+	owl:sameAs wikidata:Q830183 ; #Eve
+	frbrer:P2026 wikidata:Q1845.  #The Bible
+
+</Frequency/Monthly> a dbpedia-owl:frequencyOfPublication ;
+	owl:sameAs wikidata:Q88566195. #Monthly
+
+</Genre/Periodical> a schema:genre ;
+	owl:sameAs wikidata:Q1002697. #Periodical
+
+</Group/Feminism> a schema:about ;
+	owl:sameAs wikidata:Q7252. #Feminism
+
+</Organization/BritishLibrary> a dcndl:digitizedPublisher ;
+	owl:sameAs wikidata:Q23308. #British Library
+
+</Place/London> a dbpedia-owl:City ;    
+	owl:sameas gn:2308696 ; #geonames page of London
+	skos:broader gn:2635167 . #geonames page of United Kingdom
+
+</Organization/SpareRibLtd> a schema:Organization ;
+	dbpedia-owl:established wikidata:Q84. #Spare Rib Ltd.
+
+</Person/AngelaCarter> a foaf:Person ;
+	owl:SameAs viaf:34454299 ; #Angela Carter
+	crm:P11i_participated_in </Magazine/SpareRib>. #Spare Rib Magazine
+
+</Person/CarmenCallil> a foaf:Person ;
+	owl:sameAs viaf:5064157 ; #Carmen Callil
+	schema:founder </Organization/SpareRibLtd>. #Spare Rib Ltd.
+
+</Language/English> a schema:Language ;
+	owl:sameAs wikidata:Q1860 ; #wikidata page for English language
+	skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
+

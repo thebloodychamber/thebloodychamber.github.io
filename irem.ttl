@@ -67,3 +67,4 @@
 </Language/English> a schema:Language ;
 	owl:sameAs wikidata:Q1860 ; #wikidata page for English language
 	skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
+

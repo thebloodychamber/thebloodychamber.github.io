@@ -1,5 +1,7 @@
 @base <https://w3c.org/thebLODychamber>.
 @prefix viaf: <http://viaf.org/viaf/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dbpedia: <https://dbpedia.org/page/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/>.
 @prefix fabio: <http://purl.org/spar/fabio/> .
@@ -11,7 +13,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<https://github.com/thebloodychamber/thebloodychamber/Book/TheBloodyChamber> a schema:Book ;
+</Book/TheBloodyChamber> a schema:Book ;
     owl:sameAs viaf:188305399 ; # authority control for The Bloody Chamber
     dcterms:creator </Person/AngelaCarter> ;
     schema:publisher </Organization/VictorGollanczLtd> ;
@@ -20,7 +22,7 @@
     crm:P67_refers_to </ArtisticGenre/Postmodernism> ;
     crm:P67_refers_to </Group/Feminism> ;
     dbpedia-owl:award </Award/CheltenhamPrizeforLiterature> ;
-    crm:P148_has_component </ShortStory/TheBloodyChamber>;
+    crm:P148_has_component </ShortStory/TheBloodyChamber> ;
     crm:P148_has_component </ShortStory/TheCourtshipOfMrLion>;
     crm:P148_has_component </ShortStory/TheTigersBride> ;
     crm:P148_has_component </ShortStory/Puss-in-boots> ;
@@ -56,21 +58,21 @@
     schema:isBasedOn </ShortStory/LittleRedRidingHood> .
 
 </Person/AngelaCarter> a foaf:Person ;
-    owl:sameAs <http://viaf.org/viaf/34454299> . # authority control for Angela Carter
+    owl:sameAs viaf:34454299 . # authority control for Angela Carter
 
 </Organization/VictorGollanczLtd> a schema:Organization ;
-    owl:sameAs <http://viaf.org/viaf/154749751> . # authority control for the publishing house Victor Gollancz Ltd
+    owl:sameAs viaf:154749751 . # authority control for the publishing house Victor Gollancz Ltd
 
 </Language/English> a schema:Language ;
-    owl:sameAs <https:/github.com/thebloodychamber/thebloodychamberwww.wikidata.org/wiki/Q1860> ; #wikidata page for English language
-    skos:narrower <https://www.wikidata.org/wiki/Q7992> . # wikidata page for Cockney dialect
+    owl:sameAs wikidata:Q1860 ; #wikidata page for English language
+    skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
 
 </ArtisticGenre/Postmodernism> a dbpedia-owl:ArtisticGenre ;  
-    owl:sameAs <https://www.wikidata.org/wiki/Q47783> ; # wikidata page for Postmodernism
-    skos:broader <https://www.wikidata.org/wiki/Q968159> . #wikidata page for the concept of art movement
+    owl:sameAs wikidata:Q47783 ; # wikidata page for Postmodernism
+    skos:broader wikidata:Q968159 . #wikidata page for the concept of art movement
 
 </Group/Feminism> a crm:E74_Group ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q7252> . # wikidata page for Feminism
+    owl:sameAs dbpedia:Feminism . # DBpedia page for Feminism
 
 </Award/CheltenhamPrizeforLiterature> a dbpedia-owl:Award ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q5090221> . # wikidata page for Cheltenham Prize for Literature
+    owl:sameAs wikidata:Q5090221 . # wikidata page for Cheltenham Prize for Literature

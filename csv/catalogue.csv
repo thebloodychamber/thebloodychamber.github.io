@@ -1,0 +1,26 @@
+﻿subject;predicate;object
+Collection of pictures and memories;rdf:type;Print Book
+Collection of pictures and memories;bibtex:hasLanguage;English
+Collection of pictures and memories;fabio:title;Strange worlds : the vision of Angela Carter
+Collection of pictures and memories;schema:publisher;Sansom & Co, a Publishing imprint of Redcliffe Press Ltd.
+Collection of pictures and memories;fabio:hasPlaceOfPublication;Bristol
+Collection of pictures and memories;fabio:hasPublicationYear;2016
+Collection of pictures and memories;schema:genre;Exhibition catalogues
+Collection of pictures and memories;schema:editor;Marie Mulvey Roberts
+Collection of pictures and memories;schema:editor;Fiona Robinson
+Collection of pictures and memories;fabio:hasPageCount;56
+Collection of pictures and memories;frbrer:P2044 ;The Bloody Chamber
+Collection of pictures and memories;schema:about;Angela Carter
+Collection of pictures and memories;frbrer:P3034 ;Exhibition “Strange worlds: the vision of Angela Carter”
+Collection of pictures and memories;agrelon:hasCooperator;Carmen Callil 
+Carmen Callil ;foaf:interest;Feminism
+Carmen Callil ;schema:founder;Spare rib: the new women's magazine
+Carmen Callil ;schema:founder ;Virago Press
+Angela Carter;schema:worksFor;Virago Press
+Angela Carter;rico:hasOrHadWorkRelationWith;Carmen Callil 
+Virago Press;schema:legalName;Virago Press
+Virago Press;schema:foundingDate;1973
+Virago Press;schema:location;London
+Virago Press;rico:isRelatedTo;Feminism
+Exhibition “Strange worlds: the vision of Angela Carter”;timeline:start;10.12.2016
+Exhibition “Strange worlds: the vision of Angela Carter”;timeline:end;19.03.2017

@@ -1,0 +1,78 @@
+@base <https://w3c.org/thebLODychamber>.
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dbpedia: <https://dbpedia.org/page/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/>.
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#>. 
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+</Book/TheBloodyChamber> a schema:Book ;
+    owl:sameAs viaf:188305399 ; # authority control for The Bloody Chamber
+    dcterms:creator </Person/AngelaCarter> ;
+    schema:publisher </Organization/VictorGollanczLtd> ;
+    fabio:hasPublicationYear "1979"^^xsd:date ;
+    bibtex:hasLanguage </Language/English> ;
+    crm:P67_refers_to </ArtisticGenre/Postmodernism> ;
+    crm:P67_refers_to </Group/Feminism> ;
+    dbpedia-owl:award </Award/CheltenhamPrizeforLiterature> ;
+    crm:P148_has_component </ShortStory/TheBloodyChamber> ;
+    crm:P148_has_component </ShortStory/TheCourtshipOfMrLion>;
+    crm:P148_has_component </ShortStory/TheTigersBride> ;
+    crm:P148_has_component </ShortStory/Puss-in-boots> ;
+    crm:P148_has_component </ShortStory/TheErlKing> ;
+    crm:P148_has_component </ShortStory/TheSnowChild> ;
+    crm:P148_has_component </ShortStory/TheLadyOfTheHouseOfLove> ;
+    crm:P148_has_component </ShortStory/TheWerewolf> ;
+    crm:P148_has_component </ShortStory/TheCompanyOfWolves> ;   
+    crm:P148_has_component </ShortStory/WolfAlice> .
+
+</ShortStory/TheBloodyChamber> a fabio:ShortStory ;
+        schema:isBasedOn </ShortStory/Bluebeard> .
+
+</ShortStory/TheCourtshipOfMrLion> a fabio:ShortStory ;
+        schema:isBasedOn </ShortStory/BeautyandtheBeast> .
+
+</ShortStory/TheTigersBride> a fabio:ShortStory ;
+    schema:isBasedOn </ShortStory/BeautyandtheBeast> .
+
+</ShortStory/Puss-in-boots> a fabio:ShortStory ;
+    schema:isBasedOn </ShortStory/PussInBoots> .
+
+</ShortStory/TheLadyOfTheHouseOfLove>  a fabio:ShortStory ;
+    schema:isBasedOn </ShortStory/TheSleepingBeautyInTheWoods> .
+
+</ShortStory/TheWerewolf> a fabio:ShortStory ;
+   schema:isBasedOn </ShortStory/LittleRedRidingHood> .
+
+</ShortStory/TheCompanyOfWolves> a fabio:ShortStory ;
+    schema:isBasedOn </ShortStory/LittleRedRidingHood> . 
+
+</ShortStory/WolfAlice> a fabio:ShortStory ;
+    schema:isBasedOn </ShortStory/LittleRedRidingHood> .
+
+</Person/AngelaCarter> a foaf:Person ;
+    owl:sameAs viaf:34454299 . # authority control for Angela Carter
+
+</Organization/VictorGollanczLtd> a schema:Organization ;
+    owl:sameAs viaf:154749751 . # authority control for the publishing house Victor Gollancz Ltd
+
+</Language/English> a schema:Language ;
+    owl:sameAs wikidata:Q1860 ; #wikidata page for English language
+    skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
+
+</ArtisticGenre/Postmodernism> a dbpedia-owl:ArtisticGenre ;  
+    owl:sameAs wikidata:Q47783 ; # wikidata page for Postmodernism
+    skos:broader wikidata:Q968159 . #wikidata page for the concept of art movement
+
+</Group/Feminism> a crm:E74_Group ;
+    owl:sameAs dbpedia:Feminism . # DBpedia page for Feminism
+
+</Award/CheltenhamPrizeforLiterature> a dbpedia-owl:Award ;
+    owl:sameAs wikidata:Q5090221 . # wikidata page for Cheltenham Prize for Literature

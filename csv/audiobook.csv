@@ -1,0 +1,20 @@
+﻿subject,predicate,object
+Angela Carter: a BBC Radio Drama Collection,rdf:type,Audiobook
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Anton Lesser
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Susannah Clapp
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Roisin Conaty
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Lewis Fiander
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Andrew Sachs
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Ariyon Bakare
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Anthony Rose
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Jessica Raine
+Angela Carter: a BBC Radio Drama Collection,schema:readBy,Fiona Shaw
+Angela Carter: a BBC Radio Drama Collection,schema:duration,02:54:26
+Angela Carter: a BBC Radio Drama Collection,schema:publisher,Findaway
+Angela Carter: a BBC Radio Drama Collection,bibtex:hasLanguage,English
+Angela Carter: a BBC Radio Drama Collection,fabio:hasPublicationYear,2021
+Angela Carter: a BBC Radio Drama Collection,crm:P148_has_component,Wolf Alice
+Angela Carter: a BBC Radio Drama Collection,crm:P148_has_component,The Erl-King
+Angela Carter: a BBC Radio Drama Collection,crm:P148_has_component,The Company of Wolves
+Angela Carter: a BBC Radio Drama Collection,crm:P148_has_component,The Tiger's Bride
+Angela Carter: a BBC Radio Drama Collection,crm:P148_has_component,The Bloody Chamber

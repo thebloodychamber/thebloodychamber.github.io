@@ -1,0 +1,27 @@
+﻿subject,predicate,object
+The Bloody Chamber,rdf:type,Book
+The Bloody Chamber,dcterms:creator,Angela Carter
+The Bloody Chamber,schema:publisher,Victor Gollancz Ltd
+The Bloody Chamber,fabio:hasPublicationYear,1979
+The Bloody Chamber,bibtex:hasLanguage,English
+The Bloody Chamber,dbpedia-owl:award,Cheltenham Festival Literary Prize
+The Bloody Chamber,crm:P67_refers_to,Postmodernism
+The Bloody Chamber,crm:P67_refers_to,Feminism
+The Bloody Chamber,crm:P148_has_component,The Bloody Chamber
+The Bloody Chamber,schema:isBasedOn,Bluebeard
+The Bloody Chamber,crm:P148_has_component,The Courtship of Mr Lion
+The Courtship of Mr Lion,schema:isBasedOn,Beauty and the Beast
+The Bloody Chamber,crm:P148_has_component,The Tiger's Bride
+The Tiger's Bride,schema:isBasedOn,Beauty and the Beast
+The Bloody Chamber,crm:P148_has_component,Puss-in-Boots
+Puss-in-Boots,schema:isBasedOn,Puss in boots
+The Bloody Chamber,crm:P148_has_component,The Erl-King
+The Bloody Chamber,crm:P148_has_component,The Snow Child
+The Bloody Chamber,crm:P148_has_component,The Lady of the House of Love
+The Lady of the House of Love,schema:isBasedOn,The Sleeping Beauty in the Woods
+The Bloody Chamber,crm:P148_has_component,The Werewolf
+The Werewolf,schema:isBasedOn,Little Red Riding Hood
+The Bloody Chamber,crm:P148_has_component,The Company of Wolves
+The Company of Wolves,schema:isBasedOn,Little Red Riding Hood
+The Bloody Chamber,crm:P148_has_component,Wolf-Alice
+Wolf-Alice,schema:isBasedOn,Little Red Riding Hood

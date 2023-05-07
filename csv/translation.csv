@@ -1,0 +1,28 @@
+﻿subject;predicate;object
+Translation of the fairy tales of Charles Perrault ;rdf:type;Print Book
+Translation of the fairy tales of Charles Perrault ;bibtex:hasLanguage;English
+Translation of the fairy tales of Charles Perrault ;fabio:title;The fairy tales of Charles Perrault
+Translation of the fairy tales of Charles Perrault ;schema:publisher;Gollancz
+Translation of the fairy tales of Charles Perrault ;fabio:hasPlaceOfPublication;London
+Translation of the fairy tales of Charles Perrault ;fabio: hasPublicationYear;1977
+Translation of the fairy tales of Charles Perrault ;schema:genre;Fairy tales
+Translation of the fairy tales of Charles Perrault ;fabio:hasPageCount;159
+Translation of the fairy tales of Charles Perrault ;schema:illustrator;Martin Ware
+Translation of the fairy tales of Charles Perrault ;schema:translator;Angela Carter
+Translation of the fairy tales of Charles Perrault ;frbrer:P2064;Contes des fées
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;The fairies
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Hop o' my thumb
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Little Red Riding Hood
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Cinderella
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;The sleeping beauty in the wood
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Puss in boots
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Donkey-skin
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Ricky with the tuft
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;The foolish wishes
+Translation of the fairy tales of Charles Perrault ;crm:P148_has_component;Bluebeard
+The Bloody Chamber;frbrer:P2044;Translation of the fairy tales of Charles Perrault 
+Contes des fées;schema:genre;Fairy tales
+Contes des fées;dcterms:creator;Charles Perrault 
+Contes des fées;bibtex:hasLanguage;French
+Bluebeard;foaf:name;Bluebeard
+Bluebeard;frbrer:P2024;Bluebeard

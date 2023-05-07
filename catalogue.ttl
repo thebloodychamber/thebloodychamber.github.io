@@ -1,5 +1,8 @@
-@base <https://github.com/thebloodychamber/thebloodychamber> .
+@base <https://w3c.org/thebLODychamber> .
 
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dbpedia: <https://dbpedia.org/page/> .
 @prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
 @prefix fabio: <http://purl.org/spar/fabio/> . 
 @prefix schema: <http://schema.org/> . 
@@ -12,59 +15,78 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix event: <http://motools.sf.net/event/event.html> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix gn: <https://www.w3c.it/talks/2010/smau2010/examples/GeoNames%20Ontology%20-%20Geo%20Semantic%20Web.html> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://github.com/thebloodychamber/thebloodychamber/Book/StrangeWorldsTheVisionOfAngelaCarter> a schema:Book ;
-    bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860> ; #page of English language
+
+# ============== ITEMS ==================
+
+# === Collection of pictures and memories ===
+
+</Book/StrangeWorldsTheVisionOfAngelaCarter> a schema:Book ;
+    bibtex:hasLanguage </Language/English> ; #English
     fabio:title "Strange worlds: the vision of Angela Carter"^^xsd:string ;
-    schema:publisher <http://viaf.org/viaf/69155564095213002104> ; #viaf page of the Sansom & Company publishing house
-    fabio:hasPlaceOfPublication <https://sws.geonames.org/2654675> ; #page of Bristol
+    schema:publisher </Organisation/SansomAndCompany> ; #company Sansom & Co
+    fabio:hasPlaceOfPublication </Place/Bristol> ; #Bristol
     fabio:hasPublicationYear "2016"^^xsd:date ;
-    schema:genre <https://www.wikidata.org/wiki/Q780605> ; #page of the genre "exhibition catalogue"
-    schema:editor <https://github.com/thebloodychamber/thebloodychamber/Person/FionaRobinson> , #Fiona Robinson
-                  <https://github.com/thebloodychamber/thebloodychamber/Person/MarieMulveyRoberts> ; #Marie Mulvey Roberts
+    schema:genre </Publication/ExhibitionCatalogue> ; #exhibition catalogue
+    schema:editor </Person/FionaRobinson> , #Fiona Robinson
+                  </Person/MarieMulveyRoberts> ; #Marie Mulvey Roberts
     fabio:hasPageCount "56"^^xsd:int ;
-    frbrer:P2044 <https://github.com/thebloodychamber/thebloodychamber/Book/BloodyChamber> ; #book "The Bloody Chamber"
-    schema:about <http://viaf.org/viaf/34454299> ; #Angela Carter
-    frbrer:P3034 <https://github.com/thebloodychamber/thebloodychamber/Event/StrangeWorldsTheVisionOfAngelaCarter> ; #exhibition about Angela Carter and her works
-    agrelon:HasCooperator <https://github.com/thebloodychamber/thebloodychamber/Person/CarmenCallil> . #Carmen Callil
+    frbrer:P2044 </Book/TheBloodyChamber> ; #the book "The Bloody Chamber"
+    schema:about </Person/AngelaCarter> ; #Angela Carter
+    frbrer:P3034 </Event/StrangeWorldsTheVisionOfAngelaCarter> ; #exhibition about Angela Carter and her works
+    agrelon:HasCooperator </Person/CarmenCallil> . #Carmen Callil
 
-<https://github.com/thebloodychamber/thebloodychamber/Event/StrangeWorldsTheVisionOfAngelaCarter> a event:Event ;
+
+# ============== CONNECTED ENTITIES ==================
+
+</Language/English> a schema:Language ;
+    owl:sameAs wikidata:Q1860 ; #wikidata page for English language
+    skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
+
+</Organisation/SansomAndCompany> a schema:Organization ;
+    owl:sameAs wikidata:Q23463094 ; #wikidata page for the Sansom & Company publishing house
+    skos:broader viaf:69155564095213002104 . #authoruty control for the Redcliffe Press Ltd, which publishing imprint is Sansom & Co
+
+</Place/Bristol> a schema:Place ;
+    owl:sameAs gn:2654675 ; #geonames page of Bristol
+    skos:broader gn:2635167 . #geonames page of United Kingdom
+
+</Publication/ExhibitionCatalogue> a dbpedia-owl:Genre ;
+    owl:sameAs wikidata:Q780605 ; #wikidata page of the genre "exhibition catalogue"
+    skos:broader wikidata:Q47114558 . #wikidata page of the genre "art catalog"
+
+</Event/StrangeWorldsTheVisionOfAngelaCarter> a event:Event ;
     timeline:start "2016-12-10"^^xsd:date ;
     timeline:end "2017-03-19"^^xsd:date .
 
-<https://github.com/thebloodychamber/thebloodychamber/Person/CarmenCallil> a foaf:Person ; #Carmen Callil
-    owl:sameas <http://viaf.org/viaf/5064157> ; #viaf page of Carmen Callil
-    foaf:interest <https://dbpedia.org/page/Feminism> ; #page of feminism
-    schema:founder <http://viaf.org/viaf/179433603> , #Spare Rib magazin
-                   <http://viaf.org/viaf/170596537> . #Feministic publisher Virago Press
+</Person/CarmenCallil> a foaf:Person ; #Carmen Callil
+    owl:sameas viaf:5064157 ; #authority control for Carmen Callil
+    foaf:interest dbpedia:Feminism ; #DBpedia page of feminism
+    schema:founder </Magazine/SpareRib> , #Spare rib: the new women's magazine
+                   </Organisation/ViragoPress> . #Feministic publisher Virago Press
+    
+</Magazine/SpareRib> a dbpedia-owl:Magazine ; #Spare rib: the new women's magazine
+    owl:sameas viaf:179433603 . #authority control for the Spare Rib magazin
 
-<https://github.com/thebloodychamber/thebloodychamber/Organisation/ViragoPress> a dbo:Organisation ; #Feministic publisher Virago Press
-    owl:sameas <http://viaf.org/viaf/170596537> ; #viaf page of Virago Press
+</Organisation/ViragoPress> a dbo:Organisation ; #Feministic publisher Virago Press
+    owl:sameas viaf:170596537 ; #authority control for the Virago Press
     schema:legalName "Virago Press"^^xsd:string ;
     schema:foundingDate "1973"^^xsd:date ;
-    schema:location <https://sws.geonames.org/2308696> ; #page of London
-    rico:isRelatedTo <https://dbpedia.org/page/Feminism> . #feminism
-
-<https://github.com/thebloodychamber/thebloodychamber/Person/AngelaCarter> a foaf:Person ;
-    owl:sameas <http://viaf.org/viaf/34454299> ; #viaf page of Angela Carter
-    schema:worksFor <http://viaf.org/viaf/170596537> ; #Virago Press
-    rico:hasOrHadWorkRelationWith <http://viaf.org/viaf/5064157> . #Carmen Callil
-
-
-                   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    schema:location </Place/London> ; #London
+    rico:isRelatedTo dbpedia:Feminism . #DBpedia page of feminism
     
+</Place/London> dbpedia-owl:City ;    
+    owl:sameas gn:2308696 ; #geonames page of London
+    skos:broader gn:2635167 . #geonames page of United Kingdom
+
+</Person/AngelaCarter> a foaf:Person ;
+    owl:sameas <http://viaf.org/viaf/34454299> ; #authority control for Angela Carter
+    schema:worksFor </Organisation/ViragoPress> ; #Virago Press
+    rico:hasOrHadWorkRelationWith </Person/CarmenCallil> . #Carmen Callil
+
+</Group/Feminism> a crm:E74_Group ;
+    owl:sameAs dbpedia:Feminism . # DBpedia page for Feminism

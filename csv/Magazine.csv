@@ -1,0 +1,17 @@
+﻿Subject,Predicate,Object
+Spare rib : the new women's magazine ,rdf:type,Magazine
+Spare rib : the new women's magazine ,crm:P67_refers_to,Eve
+Spare rib : the new women's magazine ,dbpedia-owl:endDate,1993
+Spare rib : the new women's magazine ,dbpedia-owl:influenced,Re-reading Spare Rib
+Spare rib : the new women's magazine ,dcterms:issued,1972-1990
+Spare rib : the new women's magazine ,dbpedia-owl:frequencyOfPublication,Monthly
+Spare rib : the new women's magazine ,schema:genre,Periodical Text
+Spare rib : the new women's magazine ,schema:about,Feminism 
+Spare rib : the new women's magazine ,dcndl:digitizedPublisher,British Library
+Spare rib : the new women's magazine ,schema:publisher,Spare Ribs Ltd
+Spare rib : the new women's magazine ,fabio:hasPlaceOfPublication,London
+Spare rib : the new women's magazine ,bibtex:hasLanguage,English
+Eve,frbrer:P2026,The Bible
+Spare Ribs Ltd,dbpedia-owl:established,London
+Angela Carter,crm:P11i_participated_in,Spare rib : the new women's magazine 
+Carmen Callil ,schema:founder,Spare Ribs Ltd

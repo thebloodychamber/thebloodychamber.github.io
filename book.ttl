@@ -8,6 +8,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <https://github.com/thebloodychamber/thebloodychamber/Book/TheBloodyChamber> a schema:Book ;
     owl:sameAs viaf:188305399 ; # authority control for The Bloody Chamber
@@ -27,7 +29,7 @@
     crm:P148_has_component </ShortStory/TheLadyOfTheHouseOfLove> ;
     crm:P148_has_component </ShortStory/TheWerewolf> ;
     crm:P148_has_component </ShortStory/TheCompanyOfWolves> ;   
-    crm:P148_has_component </ShortStory/WolfAlice> 
+    crm:P148_has_component </ShortStory/WolfAlice> .
 
 </ShortStory/TheBloodyChamber> a fabio:ShortStory ;
         schema:isBasedOn </ShortStory/Bluebeard> .
@@ -60,13 +62,15 @@
     owl:sameAs <http://viaf.org/viaf/154749751> . # authority control for the publishing house Victor Gollancz Ltd
 
 </Language/English> a schema:Language ;
-    owl:sameAs <https:/github.com/thebloodychamber/thebloodychamberwww.wikidata.org/wiki/Q1860> . #wikidata page for English language
+    owl:sameAs <https:/github.com/thebloodychamber/thebloodychamberwww.wikidata.org/wiki/Q1860> ; #wikidata page for English language
+    skos:narrower <https://www.wikidata.org/wiki/Q7992> . # wikidata page for Cockney dialect
 
 </ArtisticGenre/Postmodernism> a dbpedia-owl:ArtisticGenre ;  
-    owl:sameAs <https://www.wikidata.org/wiki/Q47783> . # wikidata page for Postmodernism
+    owl:sameAs <https://www.wikidata.org/wiki/Q47783> ; # wikidata page for Postmodernism
+    skos:broader <https://www.wikidata.org/wiki/Q968159> . #wikidata page for the concept of art movement
 
 </Group/Feminism> a crm:E74_Group ;
     owl:sameAs <https://www.wikidata.org/wiki/Q7252> . # wikidata page for Feminism
 
-</Award/CheltenhamPrizeforLiterature> a dbo:Award ;
+</Award/CheltenhamPrizeforLiterature> a dbpedia-owl:Award ;
     owl:sameAs <https://www.wikidata.org/wiki/Q5090221> . # wikidata page for Cheltenham Prize for Literature

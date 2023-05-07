@@ -1,29 +1,70 @@
-@base <https://github.com/thebloodychamber/thebloodychamber> .
+@base <https://w3c.org/thebLODychamber> .
 @prefix bibtex: <http://purl.oclc.org/NET/nknouf/ns/bibtex#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wiki: <http://wikidata.org/wiki/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
 # ============== ITEMS ==================
 
 # === Movie ===
 
-<https://github.com/thebloodychamber/thebloodychamber/Movie/TheCompanyOfWolves> a schema:Movie ; 
-	owl:sameAs <https://www.wikidata.org/wiki/Q609936>;
-	dcterms:creator <http://viaf.org/viaf/34454299>; # URI for ‘Angela Carter’ from VIAF
-	dcterms:creator <http://viaf.org/viaf/34461426>; # URI for ‘Charles Perrault’ from VIAF
-	schema:director <http://viaf.org/viaf/85368254>; # URI for ‘Neil Jordan’ from VIAF
-	bibtex:hasLanguage <https://www.wikidata.org/wiki/Q1860>; # URI for ‘English language’ from wikidata
-	schema::genre <https://www.wikidata.org/wiki/Q130232>, # URI for 'drama genre’ from wikidata
-				  <https://www.wikidata.org/wiki/Q157394>, # URI for 'fantasy genre’ from wikidata
-				  <https://www.wikidata.org/wiki/Q200092>; # URI for 'horror genre’ from wikidata
-	schema::locationCreated <https://www.wikidata.org/wiki/Q21>; # URI for 'England’ from wikidata
-	schema::releaseDate "1984"^^xsd:gYear;
-	schema::duration "95 mins"^^xsd:string;
-	schema::isBasedOn <https://github.com/thebloodychamber/thebloodychamber/ShortStory/TheCompanyOfWolves>;
-	schema::actor <https://www.wikidata.org/wiki/Q467760> ; # URI for 'Sarah Patterson’ from wikidata
-	schema::productionCompany <https://www.wikidata.org/wiki/Q3149951>. # URI for 'ITC Production’ from wikidata
+</Movie/TheCompanyOfWolves> a schema:Movie ; 
+	owl:sameAs wiki:Q609936; # authority control for 'The Company of Wolves’ movie from wikidata
+	dcterms:creator </Person/AngelaCarter> ; # URI for ‘Angela Carter’
+	dcterms:creator </Person/CharlesPerrault> ; # URI for ‘Charles Perrault’ 
+	schema:director </Person/NeilJordan> ; # URI for ‘Neil Jordan’ 
+	bibtex:hasLanguage </Language/English> ; # URI for ‘English language’
+	schema:genre </Genre/Drama> , # URI for 'drama genre’
+				  </Genre/Fantasy> , # URI for 'fantasy genre’
+				  </Genre/Horror> ; # URI for 'horror genre’
+	schema:locationCreated </Place/England> ; # URI for 'England’
+	schema:releaseDate "1984"^^xsd:gYear ;
+	schema:duration "95 mins"^^xsd:string ;
+	schema:isBasedOn </ShortStory/TheCompanyOfWolves> ; # URI for 'The Company of Wolves’
+	schema:actor </Person/SarahPatterson> ; # URI for 'Sarah Patterson’
+	schema:productionCompany </Organization/ITCEntertainment> . # URI for 'ITC Entertainment'
+
+</Person/AngelaCarter> a foaf:Person ;
+    owl:sameAs viaf:34454299 . # authority control for ‘Angela Carter’ from VIAF
+
+</Person/CharlesPerrault> a foaf:Person ;
+    owl:sameAs viaf:34461426 . # authority control for ‘Charles Perrault’ from VIAF
+
+</Person/NeilJordan> a foaf:Person ;
+    owl:sameAs viaf:85368254 . # authority control for ‘Neil Jordan’ from VIAF
+
+</Language/English> a schema:Language ;
+    owl:sameAs viaf:34454299 ; # authority control for Angela Carter from VIAF
+    skos:narrower wiki:Q7992 .
+
+</Genre/Drama> a dbpedia-owl:Genre ;
+	owl:sameAs wiki:Q130232; # authority control for 'drama genre' from wikidata
+	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
+
+</Genre/Fantasy> a dbpedia-owl:Genre ;
+	owl:sameAs wiki:Q157394; # authority control for 'fantasy genre' from wikidata
+	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
+
+</Genre/Horror> a dbpedia-owl:Genre ;
+	owl:sameAs wiki:Q200092; # authority control for 'horror genre' from wikidata
+	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
+
+</Place/England> a schema:Place ;
+	owl:sameAs wiki:Q21; # authority control for 'England' from wikidata
+	skos:broader wiki:Q6256 . # URI for 'country' from wikidata
+
+</Person/SarahPatterson> a foaf:Person ;
+    owl:sameAs wiki:Q467760 . # authority control for ‘Sarah Patterson’ from wikidata
+
+</Organization/ITCEntertainment> a schema:productionCompany ;
+	owl:sameAs wiki:Q3149951 . # authority control for ‘ITC Entertainment’ from wikidata

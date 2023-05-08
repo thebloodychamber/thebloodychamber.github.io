@@ -13,7 +13,7 @@
 @prefix frbrer: <http://iflastandards.info/ns/fr/frbr/frbrer> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix viaf: <http://viaf.org/viaf/> .
-@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
 @prefix dbpedia: <https://dbpedia.org/page/> .
 @prefix gn: <https://www.geonames.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -34,27 +34,27 @@
     	bibtex:hasLanguage </Language/English>. #English
 
 </Character/Eve> a dbpedia-owl:FictionalCharacter ;
-	owl:sameAs wikidata:Q830183 ; #Eve
-	frbrer:P2026 wikidata:Q1845.  #The Bible
+	owl:sameAs wiki:Q830183 ; #Eve
+	frbrer:P2026 wiki:Q1845.  #The Bible
 
 </Frequency/Monthly> a dbpedia-owl:frequencyOfPublication ;
-	owl:sameAs wikidata:Q88566195. #Monthly
+	owl:sameAs wiki:Q88566195. #Monthly
 
 </Genre/Periodical> a schema:genre ;
-	owl:sameAs wikidata:Q1002697. #Periodical
+	owl:sameAs wiki:Q1002697. #Periodical
 
 </Group/Feminism> a schema:about ;
-	owl:sameAs wikidata:Q7252. #Feminism
+	owl:sameAs wiki:Q7252. #Feminism
 
 </Organization/BritishLibrary> a dcndl:digitizedPublisher ;
-	owl:sameAs wikidata:Q23308. #British Library
+	owl:sameAs wiki:Q23308. #British Library
 
 </Place/London> a dbpedia-owl:City ;    
 	owl:sameas gn:2308696 ; #geonames page of London
 	skos:broader gn:2635167 . #geonames page of United Kingdom
 
 </Organization/SpareRibLtd> a schema:Organization ;
-	dbpedia-owl:established wikidata:Q84. #Spare Rib Ltd.
+	dbpedia-owl:established wiki:Q84. #Spare Rib Ltd.
 
 </Person/AngelaCarter> a foaf:Person ;
 	owl:SameAs viaf:34454299 ; #Angela Carter
@@ -65,6 +65,6 @@
 	schema:founder </Organization/SpareRibLtd>. #Spare Rib Ltd.
 
 </Language/English> a schema:Language ;
-	owl:sameAs wikidata:Q1860 ; #wikidata page for English language
-	skos:narrower wikidata:Q7992 . # wikidata page for Cockney dialect
+	owl:sameAs wiki:Q1860 ; #wikidata page for English language
+	skos:narrower wiki:Q7992 . # wikidata page for Cockney dialect
 

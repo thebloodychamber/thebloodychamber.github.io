@@ -1,4 +1,4 @@
-@base <https://w3c.org/thebLODychamber> .
+@base <https://w3c.org/thebLODychamber/> .
 
 @prefix viaf: <http://viaf.org/viaf/> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
@@ -14,187 +14,228 @@
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix event: <http://motools.sf.net/event/event.html> .
-@prefix gn: <https://www.w3c.it/talks/2010/smau2010/examples/GeoNames%20Ontology%20-%20Geo%20Semantic%20Web.html> .
+@prefix gn: <http://www.geonames.org/ontology/documentation.html> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcndl: <http://ndl.go.jp/dcndl/> .
 
 
 # ============== ITEMS ==================
 
-# === Book ===
+# === "The Bloody Chamber" - Book ===
 
-</Book/TheBloodyChamber> a schema:Book ;
+<Book/TheBloodyChamber> a schema:Book ;
     owl:sameAs viaf:188305399 ; # authority control for The Bloody Chamber
-    dcterms:creator </Person/AngelaCarter> ;
-    schema:publisher </Organization/VictorGollanczLtd> ;
+    dcterms:creator <Person/AngelaCarter> ;
+    schema:publisher <Organization/VictorGollanczLtd> ;
     fabio:hasPublicationYear "1979"^^xsd:date ;
-    bibtex:hasLanguage </Language/English> ;
-    crm:P67_refers_to </ArtisticGenre/Postmodernism> ;
-    crm:P67_refers_to </Group/Feminism> ;
-    dbpedia-owl:award </Award/CheltenhamPrizeforLiterature> ;
-    crm:P148_has_component </ShortStory/TheBloodyChamber> ;
-    crm:P148_has_component </ShortStory/TheCourtshipOfMrLion>;
-    crm:P148_has_component </ShortStory/TheTigersBride> ;
-    crm:P148_has_component </ShortStory/Puss-in-boots> ;
-    crm:P148_has_component </ShortStory/TheErlKing> ;
-    crm:P148_has_component </ShortStory/TheSnowChild> ;
-    crm:P148_has_component </ShortStory/TheLadyOfTheHouseOfLove> ;
-    crm:P148_has_component </ShortStory/TheWerewolf> ;
-    crm:P148_has_component </ShortStory/TheCompanyOfWolves> ;   
-    crm:P148_has_component </ShortStory/WolfAlice> .
+    bibtex:hasLanguage <Language/English> ;
+    crm:P67_refers_to <ArtisticGenre/Postmodernism> ;
+    crm:P67_refers_to <Group/Feminism> ;
+    dbpedia-owl:award <Award/CheltenhamPrizeforLiterature> ;
+    crm:P148_has_component <ShortStory/TheBloodyChamber> ;
+    crm:P148_has_component <ShortStory/TheCourtshipOfMrLion>;
+    crm:P148_has_component <ShortStory/TheTigersBride> ;
+    crm:P148_has_component <ShortStory/Puss-in-boots> ;
+    crm:P148_has_component <ShortStory/TheErlKing> ;
+    crm:P148_has_component <ShortStory/TheSnowChild> ;
+    crm:P148_has_component <ShortStory/TheLadyOfTheHouseOfLove> ;
+    crm:P148_has_component <ShortStory/TheWerewolf> ;
+    crm:P148_has_component <ShortStory/TheCompanyOfWolves> ;   
+    crm:P148_has_component <ShortStory/WolfAlice> .
 
-</ShortStory/TheBloodyChamber> a fabio:ShortStory ;
-        schema:isBasedOn </ShortStory/Bluebeard> .
+<ShortStory/TheBloodyChamber> a fabio:ShortStory ;
+        schema:isBasedOn <ShortStory/Bluebeard> .
 
-</ShortStory/TheCourtshipOfMrLion> a fabio:ShortStory ;
-        schema:isBasedOn </ShortStory/BeautyandtheBeast> .
+<ShortStory/TheCourtshipOfMrLion> a fabio:ShortStory ;
+        schema:isBasedOn <ShortStory/BeautyandtheBeast> .
 
-</ShortStory/TheTigersBride> a fabio:ShortStory ;
-    schema:isBasedOn </ShortStory/BeautyandtheBeast> .
+<ShortStory/TheTigersBride> a fabio:ShortStory ;
+    schema:isBasedOn <ShortStory/BeautyandtheBeast> .
 
-</ShortStory/Puss-in-boots> a fabio:ShortStory ;
-    schema:isBasedOn </ShortStory/PussInBoots> .
+<ShortStory/Puss-in-boots> a fabio:ShortStory ;
+    schema:isBasedOn <ShortStory/PussInBoots> .
 
-</ShortStory/TheLadyOfTheHouseOfLove>  a fabio:ShortStory ;
-    schema:isBasedOn </ShortStory/TheSleepingBeautyInTheWoods> .
+<ShortStory/TheLadyOfTheHouseOfLove>  a fabio:ShortStory ;
+    schema:isBasedOn <ShortStory/TheSleepingBeautyInTheWoods> .
 
-</ShortStory/TheWerewolf> a fabio:ShortStory ;
-   schema:isBasedOn </ShortStory/LittleRedRidingHood> .
+<ShortStory/TheWerewolf> a fabio:ShortStory ;
+   schema:isBasedOn <ShortStory/LittleRedRidingHood> .
 
-</ShortStory/TheCompanyOfWolves> a fabio:ShortStory ;
-    schema:isBasedOn </ShortStory/LittleRedRidingHood> . 
+<ShortStory/TheCompanyOfWolves> a fabio:ShortStory ;
+    schema:isBasedOn <ShortStory/LittleRedRidingHood> . 
 
-</ShortStory/WolfAlice> a fabio:ShortStory ;
-    schema:isBasedOn </ShortStory/LittleRedRidingHood> .
+<ShortStory/WolfAlice> a fabio:ShortStory ;
+    schema:isBasedOn <ShortStory/LittleRedRidingHood> .
 
-</Organization/VictorGollanczLtd> a schema:Organization ;
+<Organization/VictorGollanczLtd> a schema:Organization ;
     owl:sameAs viaf:154749751 . # authority control for the publishing house Victor Gollancz Ltd
 
-</Language/English> a schema:Language ;
+<Language/English> a schema:Language ;
     owl:sameAs wiki:Q1860 ; #wikidata page for English language
     skos:narrower wiki:Q7992 . # wikidata page for Cockney dialect
 
-</ArtisticGenre/Postmodernism> a dbpedia-owl:ArtisticGenre ;  
+<ArtisticGenre/Postmodernism> a dbpedia-owl:ArtisticGenre ;  
     owl:sameAs wiki:Q47783 ; # wikidata page for Postmodernism
     skos:broader wiki:Q968159 . #wikidata page for the concept of art movement
 
-</Group/Feminism> a crm:E74_Group ;
+<Group/Feminism> a crm:E74_Group ;
     owl:sameAs dbpedia:Feminism . # DBpedia page for Feminism
 
-</Award/CheltenhamPrizeforLiterature> a dbpedia-owl:Award ;
+<Award/CheltenhamPrizeforLiterature> a dbpedia-owl:Award ;
     owl:sameAs wiki:Q5090221 . # wikidata page for Cheltenham Prize for Literature
 
 
-# === Collection of pictures and memories ===
+# === "Strange Worlds: The Vision of Angela Carter" - Collection of pictures and memories ===
 
-</Book/StrangeWorldsTheVisionOfAngelaCarter> a schema:Book ;
-    bibtex:hasLanguage </Language/English> ; #English
+<Book/StrangeWorldsTheVisionOfAngelaCarter> a schema:Book ;
+    bibtex:hasLanguage <Language/English> ; #English
     fabio:title "Strange worlds: the vision of Angela Carter"^^xsd:string ;
-    schema:publisher </Organisation/SansomAndCompany> ; #company Sansom & Co
-    fabio:hasPlaceOfPublication </Place/Bristol> ; #Bristol
+    schema:publisher <Organisation/SansomAndCompany> ; #company Sansom & Co
+    fabio:hasPlaceOfPublication <Place/Bristol> ; #Bristol
     fabio:hasPublicationYear "2016"^^xsd:date ;
-    schema:genre </Publication/ExhibitionCatalogue> ; #exhibition catalogue
-    schema:editor </Person/FionaRobinson> , #Fiona Robinson
-                  </Person/MarieMulveyRoberts> ; #Marie Mulvey Roberts
+    schema:genre <Publication/ExhibitionCatalogue> ; #exhibition catalogue
+    schema:editor <Person/FionaRobinson> , #Fiona Robinson
+                  <Person/MarieMulveyRoberts> ; #Marie Mulvey Roberts
     fabio:hasPageCount "56"^^xsd:int ;
-    frbrer:P2044 </Book/TheBloodyChamber> ; #the book "The Bloody Chamber"
-    schema:about </Person/AngelaCarter> ; #Angela Carter
-    frbrer:P3034 </Event/StrangeWorldsTheVisionOfAngelaCarter> ; #exhibition about Angela Carter and her works
-    agrelon:HasCooperator </Person/CarmenCallil> . #Carmen Callil
+    frbrer:P2044 <Book/TheBloodyChamber> ; #the book "The Bloody Chamber"
+    schema:about <Person/AngelaCarter> ; #Angela Carter
+    frbrer:P3034 <Event/StrangeWorldsTheVisionOfAngelaCarter> ; #exhibition about Angela Carter and her works
+    agrelon:HasCooperator <Person/CarmenCallil> . #Carmen Callil
 
-</Organisation/SansomAndCompany> a schema:Organization ;
+<Organisation/SansomAndCompany> a schema:Organization ;
     owl:sameAs wiki:Q23463094 ; #wikidata page for the Sansom & Company publishing house
     skos:broader viaf:69155564095213002104 . #authoruty control for the Redcliffe Press Ltd, which publishing imprint is Sansom & Co
 
-</Place/Bristol> a schema:Place ;
+<Place/Bristol> a schema:Place ;
     owl:sameAs gn:2654675 ; #geonames page of Bristol
     skos:broader gn:2635167 . #geonames page of United Kingdom
 
-</Publication/ExhibitionCatalogue> a dbpedia-owl:Genre ;
+<Publication/ExhibitionCatalogue> a dbpedia-owl:Genre ;
     owl:sameAs wiki:Q780605 ; #wikidata page of the genre "exhibition catalogue"
     skos:broader wiki:Q47114558 . #wikidata page of the genre "art catalog"
 
-</Event/StrangeWorldsTheVisionOfAngelaCarter> a event:Event ;
+<Event/StrangeWorldsTheVisionOfAngelaCarter> a event:Event ;
     timeline:start "2016-12-10"^^xsd:date ;
     timeline:end "2017-03-19"^^xsd:date .
 
-</Person/CarmenCallil> a foaf:Person ; #Carmen Callil
+<Person/CarmenCallil> a foaf:Person ; #Carmen Callil
     owl:sameas viaf:5064157 ; #authority control for Carmen Callil
     foaf:interest dbpedia:Feminism ; #DBpedia page of feminism
     schema:founder </Magazine/SpareRib> , #Spare rib: the new women's magazine
                    </Organisation/ViragoPress> . #Feministic publisher Virago Press
     
-</Magazine/SpareRib> a dbpedia-owl:Magazine ; #Spare rib: the new women's magazine
+<Magazine/SpareRib> a dbpedia-owl:Magazine ; #Spare rib: the new women's magazine
     owl:sameas viaf:179433603 . #authority control for the Spare Rib magazin
 
-</Organisation/ViragoPress> a schema:Organisation ; #Feministic publisher Virago Press
+<Organisation/ViragoPress> a schema:Organisation ; #Feministic publisher Virago Press
     owl:sameas viaf:170596537 ; #authority control for the Virago Press
     schema:legalName "Virago Press"^^xsd:string ;
     schema:foundingDate "1973"^^xsd:date ;
-    schema:location </Place/London> ; #London
+    schema:location <Place/London> ; #London
     rico:isRelatedTo dbpedia:Feminism . #DBpedia page of feminism
     
-</Place/London> a dbpedia-owl:City ;    
+<Place/London> a dbpedia-owl:City ;    
     owl:sameas gn:2308696 ; #geonames page of London
     skos:broader gn:2635167 . #geonames page of United Kingdom
 
-</Person/AngelaCarter> a foaf:Person ;
+<Person/AngelaCarter> a foaf:Person ;
     owl:sameas viaf:34454299 ; #authority control for Angela Carter
-    schema:worksFor </Organisation/ViragoPress> ; #Virago Press
-    rico:hasOrHadWorkRelationWith </Person/CarmenCallil> . #Carmen Callil
+    schema:worksFor <Organisation/ViragoPress> ; #Virago Press
+    rico:hasOrHadWorkRelationWith <Person/CarmenCallil> . #Carmen Callil
 
 
-# === Movie ===
+# === "The Company of Wolves" - Movie ===
 
-</Movie/TheCompanyOfWolves> a schema:Movie ; 
+<Movie/TheCompanyOfWolves> a schema:Movie ; 
 	owl:sameAs wiki:Q609936; # authority control for 'The Company of Wolves’ movie from wikidata
-	dcterms:creator </Person/AngelaCarter> ; # URI for ‘Angela Carter’
-	dcterms:creator </Person/CharlesPerrault> ; # URI for ‘Charles Perrault’ 
-	schema:director </Person/NeilJordan> ; # URI for ‘Neil Jordan’ 
-	bibtex:hasLanguage </Language/English> ; # URI for ‘English language’
-	schema:genre </Genre/Drama> , # URI for 'drama genre’
-				  </Genre/Fantasy> , # URI for 'fantasy genre’
-				  </Genre/Horror> ; # URI for 'horror genre’
-	schema:locationCreated </Place/England> ; # URI for 'England’
+	dcterms:creator <Person/AngelaCarter> ; # URI for ‘Angela Carter’
+	dcterms:creator <Person/CharlesPerrault> ; # URI for ‘Charles Perrault’ 
+	schema:director <Person/NeilJordan> ; # URI for ‘Neil Jordan’ 
+	bibtex:hasLanguage <Language/English> ; # URI for ‘English language’
+	schema:genre <Genre/Drama> , # URI for 'drama genre’
+				  <Genre/Fantasy> , # URI for 'fantasy genre’
+				  <Genre/Horror> ; # URI for 'horror genre’
+	schema:locationCreated <Place/England> ; # URI for 'England’
 	schema:releaseDate "1984"^^xsd:gYear ;
 	schema:duration "95 mins"^^xsd:string ;
-	schema:isBasedOn </ShortStory/TheCompanyOfWolves> ; # URI for 'The Company of Wolves’
-	schema:actor </Person/SarahPatterson> ; # URI for 'Sarah Patterson’
-	schema:productionCompany </Organization/ITCEntertainment> . # URI for 'ITC Entertainment'
+	schema:isBasedOn <ShortStory/TheCompanyOfWolves> ; # URI for 'The Company of Wolves’
+	schema:actor <Person/SarahPatterson> ; # URI for 'Sarah Patterson’
+	schema:productionCompany <Organization/ITCEntertainment> . # URI for 'ITC Entertainment'
 
-</Person/CharlesPerrault> a foaf:Person ;
+<Person/CharlesPerrault> a foaf:Person ;
     owl:sameAs viaf:34461426 . # authority control for ‘Charles Perrault’ from VIAF
 
-</Person/NeilJordan> a foaf:Person ;
+<Person/NeilJordan> a foaf:Person ;
     owl:sameAs viaf:85368254 . # authority control for ‘Neil Jordan’ from VIAF
 
-</Language/English> a schema:Language ;
-    owl:sameAs viaf:34454299 ; # authority control for Angela Carter from VIAF
-    skos:narrower wiki:Q7992 .
-
-</Genre/Drama> a dbpedia-owl:Genre ;
+<Genre/Drama> a dbpedia-owl:Genre ;
 	owl:sameAs wiki:Q130232; # authority control for 'drama genre' from wikidata
 	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
 
-</Genre/Fantasy> a dbpedia-owl:Genre ;
+<Genre/Fantasy> a dbpedia-owl:Genre ;
 	owl:sameAs wiki:Q157394; # authority control for 'fantasy genre' from wikidata
 	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
 
-</Genre/Horror> a dbpedia-owl:Genre ;
+<Genre/Horror> a dbpedia-owl:Genre ;
 	owl:sameAs wiki:Q200092; # authority control for 'horror genre' from wikidata
 	skos:broader wiki:Q483394 . # URI for 'genre' from wikidata
 
-</Place/England> a schema:Place ;
+<Place/England> a schema:Place ;
 	owl:sameAs wiki:Q21; # authority control for 'England' from wikidata
 	skos:broader wiki:Q6256 . # URI for 'country' from wikidata
 
-</Person/SarahPatterson> a foaf:Person ;
+<Person/SarahPatterson> a foaf:Person ;
     owl:sameAs wiki:Q467760 . # authority control for ‘Sarah Patterson’ from wikidata
 
-</Organization/ITCEntertainment> a schema:Organization ;
+<Organization/ITCEntertainment> a schema:Organization ;
 	owl:sameAs wiki:Q3149951 . # authority control for ‘ITC Entertainment’ from wikidata
 
+
+# === "Spare rib : the new women's magazine" - Magazine ===
+
+<Magazine/SpareRib> a dbpedia-owl:Magazine ;
+	rdfs:label "Spare Rib: the new women's magazine"@en ;
+	owl:sameAs viaf:179433603 ;	#Spare Rib Magazine
+    crm:P67_refers_to <Character/Eve> ; #Eve
+    dbpedia-owl:endDate "1993"^^xsd:gYear ;
+    dbpedia-owl:influenced <Book/Re-readingSpareRib> ; #Re-reading Spare Rib 
+    dcterms:issued "1972-1990"^^xsd:string ;
+    dbpedia-owl:frequencyOfPublication <Frequency/Monthly> ; #Monthly
+    schema:genre <Genre/Periodical> ; #Periodical
+    schema:about <Group/Feminism> ; #Feminism
+    dcndl:digitizedPublisher <Organization/BritishLibrary> ; #British Library
+    schema:publisher <Organization/SpareRibLtd> ; #Spare Rib Ltd.
+    fabio:hasPlaceOfPublication <Place/London> ; #London
+    bibtex:hasLanguage <Language/English>. #English
+
+<Character/Eve> a dbpedia-owl:FictionalCharacter ;
+	owl:sameAs wiki:Q830183 ; #Eve
+	frbrer:P2026 wiki:Q1845.  #The Bible
+
+<Frequency/Monthly> a dcterms:Frequency ;
+	owl:sameAs wiki:Q88566195. #Monthly
+
+<Genre/Periodical> a dbpedia-owl:Genre ;
+	owl:sameAs wiki:Q1002697. #Periodical
+
+<Organization/BritishLibrary> a schema:Organization ;
+	owl:sameAs wiki:Q23308. #British Library
+
+<Place/London> a dbpedia-owl:City ;    
+	owl:sameas gn:2308696 ; #geonames page of London
+	skos:broader gn:2635167 . #geonames page of United Kingdom
+
+<Organization/SpareRibLtd> a schema:Organization ;
+	dbpedia-owl:established wiki:Q84. #Spare Rib Ltd.
+
+<Person/AngelaCarter> a foaf:Person ;
+	crm:P11i_participated_in </Magazine/SpareRib>. #Spare Rib Magazine
+
+<Person/CarmenCallil> a foaf:Person ;
+	owl:sameAs viaf:5064157 ; #Carmen Callil
+	schema:founder </Organization/SpareRibLtd>. #Spare Rib Ltd.

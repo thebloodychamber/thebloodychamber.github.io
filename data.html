@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>THE BLOODY CHAMBER - Data Creation</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon2.png" />
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <img src="/img/icon.png" height="60px" class="d-inline-block align-top" alt="" style="padding:10px;">
+            <a class="navbar-brand js-scroll-trigger" href="../index.html" style="color:#b41010 !important;">
+                the bLODy chamber</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" id="menu">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color:#b41010 !important;">Knowledge Organization</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item js-scroll-trigger" href="/er_model.html">Conceptual Map and
+                                E/R Model</a>
+                            <a class="dropdown-item" href="/metadata.html">Metadata Analysis</a>
+                            <a class="dropdown-item" href="/metadata.html#metadata2">Metadata Alignment</a>
+                            <a class="dropdown-item" href="/theoretical_model.html">Theoretical model</a>
+                            <a class="dropdown-item" href="/er_model_enhanced.html">Enhanced E/R Model</a>
+                            <a class="dropdown-item" href="/conceptual_model.html">Conceptual Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color:#b41010 !important;">Knowledge Representation</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item js-scroll-trigger" href="/data.html">Data Creation</a>
+                            <a class="dropdown-item" href="/rdf.html">RDF Production</a>
+                            <a class="dropdown-item" href="/rdf.html#rdf2">RDF Visualization </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section" style="padding:6rem 0 0rem;">
+        <div class="container">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-12 text-left" id="projt">
+                    <h1 class="text-dark mb-4">Data Creation</h1>
+                </div>
+                <div class="col-xl-12 text-left">
+                    <p>After completing the modelling activity, the next step is to describe the items based on the
+                        conceptual model that was designed. This involves creating a table for each item in the form of
+                        a <strong>.csv</strong> file, where each row represents a statement about the item, and each
+                        column corresponds to the <em>subject, predicate,</em> and <em>object</em> of that statement.
+                        The <em>subjects</em> and <em>objects</em> are written in natural language, while the predicates
+                        are expressed using the ontologies that were chosen in the conceptual modelling phase. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="data" style="padding:1rem 0 2rem !important;">
+        <div id="data-collection" class="container tabs wrap">
+            <div class="row ">
+                <div class="col col-sm-12" id="tabs">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-book-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-book" type="button" role="tab" aria-selected="true">BOOK</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-catalogue-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-catalogue" type="button" role="tab"
+                                aria-selected="false">CATALOGUE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-translation-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-translation" type="button" role="tab"
+                                aria-selected="false">TRANSLATION</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-audiobook-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-audiobook" type="button" role="tab"
+                                aria-selected="false">AUDIOBOOK</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-movie-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-movie" type="button" role="tab"
+                                aria-selected="false">MOVIE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-photo-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-photo" type="button" role="tab"
+                                aria-selected="false">COLLECTION</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-book2-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-book2" type="button" role="tab" aria-selected="false">BOOK</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-country-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-country" type="button" role="tab"
+                                aria-selected="false">COUNTRY</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-manuscript-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-manuscript" type="button" role="tab"
+                                aria-selected="false">MANUSCRIPT</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-magazine-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-magazine" type="button" role="tab"
+                                aria-selected="false">MAGAZINE</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="nav-book" role="tabpanel" aria-labelledby="nav-book-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>BOOK</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>The Bloody Chamber</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Book</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>schema:publisher</td>
+                                                        <td>Victor Gollancz Ltd</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>fabio:hasPublicationYear</td>
+                                                        <td>1979</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>dbpedia-owl:award</td>
+                                                        <td>Cheltenham Festival Literary Prize</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P67_refers_to</td>
+                                                        <td>Postmodernism</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P67_refers_to</td>
+                                                        <td>Feminism</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Bloody Chamber</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Bluebeard</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Courtship of Mr Lion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Courtship of Mr Lion</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Beauty and the Beast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Tiger's Bride</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Tiger's Bride</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Beauty and the Beast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Puss-in-Boots</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Puss-in-Boots</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Puss in Boots</td>
+                                                    </tr>
+                                                    <td>The Bloody Chamber</td>
+                                                    <td>crm:P148_has_component</td>
+                                                    <td>The Erl-King</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Snow Child</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Lady of the House of Love</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Lady of the House of Love</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>The Sleeping Beauty in the Woods</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Werewolf</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Werewolf</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Little Red Riding Hood</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Company of Wolves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Little Red Riding Hood</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Wolf-Alice</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wolf-Alice</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>Little Red Riding Hood</td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-catalogue" role="tabpanel" aria-labelledby="nav-catalogue-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>CATALOGUE</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Collection of pictures and memories</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Print Book</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>fabio:title</td>
+                                                        <td>Strange worlds : the vision of Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>schema:publisher</td>
+                                                        <td>Sansom & Co, a Publishing imprint of Redcliffe Press Ltd
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>fabio:hasPlaceOfPublication</td>
+                                                        <td>Bristol</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>fabio:hasPublicationYear</td>
+                                                        <td>2016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>schema:genre</td>
+                                                        <td>Exhibition catalogues</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>schema:editor</td>
+                                                        <td>Marie Mulvey Roberts</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>schema:editor</td>
+                                                        <td>Fiona Robinson</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>fabio:hasPageCount</td>
+                                                        <td>56</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>frbrer:P2044</td>
+                                                        <td>The Bloody Chamber</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>schema:about</td>
+                                                        <td>Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>frbrer:P3034</td>
+                                                        <td>Exhibition “Strange worlds: the vision of Angela Carter”
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of pictures and memories</td>
+                                                        <td>agrelon:hasCooperator</td>
+                                                        <td>Carmen Callil</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Carmen Callil</td>
+                                                        <td>foaf:interest</td>
+                                                        <td>Feminism</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Carmen Callil</td>
+                                                        <td>schema:founder</td>
+                                                        <td>Spare rib: the new women's magazine</td>
+                                                    </tr>
+                                                    <td>Carmen Callil</td>
+                                                    <td>schema:founder</td>
+                                                    <td>Virago Press</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter</td>
+                                                        <td>schema:worksFor</td>
+                                                        <td>Virago Press</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter</td>
+                                                        <td>rico:hasOrHadWorkRelationWith</td>
+                                                        <td>Carmen Callil</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Virago Press</td>
+                                                        <td>schema:legalName</td>
+                                                        <td>Virago Press</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Virago Press</td>
+                                                        <td>schema:foundingDate</td>
+                                                        <td>1973</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Virago Press</td>
+                                                        <td>schema:location</td>
+                                                        <td>London</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Virago Press</td>
+                                                        <td>rico:isRelatedTo</td>
+                                                        <td>Feminism</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Exhibition “Strange worlds: the vision of Angela Carter”
+                                                        </td>
+                                                        <td>timeline:start</td>
+                                                        <td>10.12.2016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Exhibition “Strange worlds: the vision of Angela Carter”
+                                                        </td>
+                                                        <td>timeline:end</td>
+                                                        <td>19.03.2017</td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-translation" role="tabpanel" aria-labelledby="nav-translation-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>TRANSLATION</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Translation of the fairy tales of Charles Perrault</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Print Book</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>fabio:title</td>
+                                                        <td>The fairy tales of Charles Perrault</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>schema:publisher</td>
+                                                        <td>Gollancz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>fabio:hasPlaceOfPublication</td>
+                                                        <td>London</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>fabio:hasPublicationYear</td>
+                                                        <td>1977</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>schema:genre</td>
+                                                        <td>Fairy tales</td>
+                                                    </tr>
+                                                    <td>Translation of the fairy tales of Charles Perrault</td>
+                                                    <td>fabio:hasPageCount</td>
+                                                    <td>159</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>schema:illustrator</td>
+                                                        <td>Martin Ware</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>schema:translator</td>
+                                                        <td>Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>frbrer:P2064</td>
+                                                        <td>Contes des fées</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The fairies</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Hop o' my thumb</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Little Red Riding Hood</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Cinderella</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The sleeping beauty in the wood</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Puss in boots</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Donkey-skin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Ricky with the tuft</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The foolish wishes</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Bluebeard</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>frbrer:P2044</td>
+                                                        <td>Translation of the fairy tales of Charles Perrault</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contes des fées</td>
+                                                        <td>schema:genre</td>
+                                                        <td>Fairy tales</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contes des fées</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Charles Perrault</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contes des fées</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>French</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bluebeard</td>
+                                                        <td>foaf:name</td>
+                                                        <td>Bluebeard</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bluebeard</td>
+                                                        <td>frbrer:P2024</td>
+                                                        <td>Bluebeard</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-audiobook" role="tabpanel" aria-labelledby="nav-audiobook-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>AUDIOBOOK</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Audiobook</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Anton Lesser</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Susannah Clapp</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Roisin Conaty</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Lewis Fiander</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Andrew Sachs</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Ariyon Bakare</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Anthony Rose</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Jessica Raine</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:readBy</td>
+                                                        <td>Fiona Shaw</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:duration</td>
+                                                        <td>02:54:26</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>schema:publisher</td>
+                                                        <td>Findaway</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>fabio:hasPublicationYear</td>
+                                                        <td>2021</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>Wolf Alice</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Erl-King</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Company of Wolves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>The Tiger's Bride</td>
+                                                        <td>1948-01-05</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angela Carter: a BBC Radio Drama Collection</td>
+                                                        <td>crm:P148_has_component</td>
+                                                        <td>The Bloody Chamber</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-movie" role="tabpanel" aria-labelledby="nav-movie-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>MOVIE</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>The Company of Wolves</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Movie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Charles Perrault</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:director</td>
+                                                        <td>Neil Jordan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:genre</td>
+                                                        <td>Drama,Fantasy,Horror</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:locationCreated</td>
+                                                        <td>England</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:releaseDate</td>
+                                                        <td>1984</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:duration</td>
+                                                        <td>95 mins</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>bibtex:hasLanguage</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:isBasedOn</td>
+                                                        <td>The Company of Wolves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:actor</td>
+                                                        <td>Sarah Patterson</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Company of Wolves</td>
+                                                        <td>schema:productionCompany</td>
+                                                        <td>ITC Entertainment</td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>COLLECTION OF PHOTOGRAPHS</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Photograph of Sarah Patterson and the Wolf</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Photograph</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Photograph of Sarah Patterson and the Wolf</td>
+                                                        <td>crm:P62_depicts</td>
+                                                        <td>Sarah Patterson</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Photograph of Sarah Patterson and the Wolf</td>
+                                                        <td>crm:P62_depicts</td>
+                                                        <td>The Company of Wolves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Photograph of Sarah Patterson and the Wolf</td>
+                                                        <td>dcterms:isPartOf</td>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                        <td>schema:title</td>
+                                                        <td>Photographs from The Company of Wolves, a film by Neil
+                                                            Jordan and Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                        <td>schema:locationCreated</td>
+                                                        <td>England</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                        <td>schema:dateCreated</td>
+                                                        <td>1984</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>ITC Entertainment Palace Production</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collection of Photographs from Company of Wolves</td>
+                                                        <td>schema:holdingArchive</td>
+                                                        <td>British Library</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-book2" role="tabpanel" aria-labelledby="nav-book2-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>BOOK</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Shaking A Leg: Journalism and Writings</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Book</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Angela Carter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>dcterms:creator</td>
+                                                        <td>Jennifer S. Uglow</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>schema:genre</td>
+                                                        <td>Fictional Work</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>schema:publisher</td>
+                                                        <td>Chatto & Windus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>fabio:hasPublicationYear</td>
+                                                        <td>1997</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>fabio:hasPlaceOfPublication</td>
+                                                        <td>England</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>bibtex:hasLanguage;</td>
+                                                        <td>English</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                        <td>dbpedia-owl:influencedBy</td>
+                                                        <td>Japan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Notes from the Front Line</td>
+                                                        <td>dcterms:isPartOf</td>
+                                                        <td>Shaking A Leg: Journalism and Writings</td>
+                                                    </tr>
+                                                    <td>Notes from the Front Line;</td>
+                                                    <td>schema:about</td>
+                                                    <td>The Bloody Chamber</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-country" role="tabpanel" aria-labelledby="nav-country-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100" id="datacountry">
+                                            <h4>COUNTRY</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <td>Japan</td>
+                                                    <td>rdf:type</td>
+                                                    <td>Country</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>dbpedia-owl:capital</td>
+                                                        <td>Tokyo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>dbpedia-owl:officialLanguage</td>
+                                                        <td>Japanese</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>pext:hasCurrency</td>
+                                                        <td>Japanese Yen</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>dbpedia-owl:knownFor</td>
+                                                        <td>Sushi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>schema:organizer</td>
+                                                        <td>Yamayaki</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>dbpedia-owl:created</td>
+                                                        <td>Karate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Japan</td>
+                                                        <td>dbpedia-owl:created</td>
+                                                        <td>Noh</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Bloody Chamber</td>
+                                                        <td>dbpedia-owl:influencedBy</td>
+                                                        <td>Japan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shaking a Leg: Journalism and Writings</td>
+                                                        <td>dbpedia-owl:influencedBy</td>
+                                                        <td>Japan</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-manuscript" role="tabpanel" aria-labelledby="nav-manuscript-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>MANUSCRIPT </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Ontology</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>rdf:type</td>
+                                                            <td>Manuscript</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>bibtex:hasLanguage</td>
+                                                            <td>English</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>dcterms:isPartOf</td>
+                                                            <td>Angela Carter Papers: 'The Bloody Chamber and Other
+                                                                Short Stories' 1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>dcterms:hasFormat</td>
+                                                            <td>Drafts</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>gn:countryCode</td>
+                                                            <td>IT</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>gn:lat</td>
+                                                            <td>38°9&#39;25&quot;92 N</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Manuscript notes and drafts of The Bloody Chamber</td>
+                                                            <td>gn:long</td>
+                                                            <td>13°6&#39;29&quot;52 E</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angela Carter</td>
+                                                            <td>rico:isAssociatedWith</td>
+                                                            <td>Cinisi, luogo del ritrovamento del corpo di Peppino
+                                                                Impastato</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angela Carter</td>
+                                                            <td>rico:isAssociatedWith</td>
+                                                            <td>Cinisi, luogo del ritrovamento del corpo di Peppino
+                                                                Impastato</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angela Carter</td>
+                                                            <td>rico:isAssociatedWith</td>
+                                                            <td>Cinisi, luogo del ritrovamento del corpo di Peppino
+                                                                Impastato</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>England</td>
+                                                            <td>rico:isAssociatedWith</td>
+                                                            <td>Cinisi, luogo del ritrovamento del corpo di Peppino
+                                                                Impastato</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-magazine" role="tabpanel" aria-labelledby="nav-magazine-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text text-white w-100">
+                                            <h4>MAGAZINE </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Subject</th>
+                                                            <th title="Field #2">Predicate</th>
+                                                            <th title="Field #3">Object</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>rdf:type</td>
+                                                            <td>Magazine</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>crm:P67_refers_to</td>
+                                                            <td>Eve</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>dbpedia-owl:endDate</td>
+                                                            <td>1993</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>dbpedia-owl:influenced</td>
+                                                            <td>Re-reading Spare Rib</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>dcterms:issued</td>
+                                                            <td>1972-1990</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>dbpedia-owl:frequencyOfPublication</td>
+                                                            <td>Monthly</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>schema:genre</td>
+                                                            <td>Periodical Text</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>schema:about</td>
+                                                            <td>Feminism</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>dcndl:digitizedPublisher</td>
+                                                            <td>British Library</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>schema:publisher</td>
+                                                            <td>Spare Ribs Ltd</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>fabio:hasPlaceOfPublication</td>
+                                                            <td>London</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                            <td>bibtex:hasLanguage</td>
+                                                            <td>English</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Eve</td>
+                                                            <td>frbrer:P2026</td>
+                                                            <td>The Bible</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spare Rib Ltd.</td>
+                                                            <td>dbpedia-owl:established</td>
+                                                            <td>London</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angela Carter</td>
+                                                            <td>crm:P11i_participated_in</td>
+                                                            <td>Spare Rib: The New Women's Magazine</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Carmen Callil</td>
+                                                            <td>schema:founder</td>
+                                                            <td>Spare Rib Ltd.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <a href="/csv/csv_all.zip" download="csv" style="text-align:center !important;">
+                <h4 class="text-dark">
+                    Download CSV files
+                </h4>
+            </a>
+            <br>
+        </div>
+    </section>
+
+    <footer class="footer small text-center text-white-50">
+        <div class="container">
+            <p class="copyright-text">&copy; DHDK - ALma Mater Bologna University</p>
+            <p class="copyright-text">This is a non-commercial project for scholarly purposes only.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

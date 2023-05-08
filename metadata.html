@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>THE BLOODY CHAMBER - Metadata Analysis and Alignment</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon2.png" />
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <img src="/img/icon.png" height="60px" class="d-inline-block align-top" alt="" style="padding:10px;">
+            <a class="navbar-brand js-scroll-trigger" href="../index.html" style="color:#b41010 !important;">
+                the bLODy chamber</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" id="menu">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color:#b41010 !important;">Knowledge Organization</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item js-scroll-trigger" href="/er_model.html">Conceptual Map and
+                                E/R Model</a>
+                            <a class="dropdown-item" href="/metadata.html">Metadata Analysis</a>
+                            <a class="dropdown-item" href="/metadata.html#metadata2">Metadata Alignment</a>
+                            <a class="dropdown-item" href="/theoretical_model.html">Theoretical model</a>
+                            <a class="dropdown-item" href="/er_model_enhanced.html">Enhanced E/R Model</a>
+                            <a class="dropdown-item" href="/conceptual_model.html">Conceptual Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color:#b41010 !important;">Knowledge Representation</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item js-scroll-trigger" href="/data.html">Data Creation</a>
+                            <a class="dropdown-item" href="/rdf.html">RDF Production</a>
+                            <a class="dropdown-item" href="/rdf.html#rdf2">RDF Visualization </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section" style="padding:6rem 0 0rem;">
+        <div class="container">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-12 text-left" id="projt">
+                    <h1 class="text-dark mb-4">Metadata Analysis</h1>
+                </div>
+                <div class="col-xl-12 text-left">
+                    <p>Subsequently, we conducted an analysis of the data provided by the various institutions involved
+                        in the project, with the aim of identifying the standards and guidelines that were used to
+                        manage the data. Through this process, we discovered that most of the institutions had
+                        explicitly identified the standard to which they adhered but some of them used several
+                        standards, therefore we suggested our choices. <br> <br> For <strong>the book</strong> <em>“The
+                            Bloody Chamber”</em> we have chosen as a provider
+                        <em>OPAC (Online Public Access Catalogue)</em> which used standard <em>ISBD (International
+                            Standard Bibliographic Description)</em>. It is a metadata standard which used primarily in
+                        the library community for describing bibliographic items such as books, journals, and other
+                        materials. <br> <br>
+                        The provider of <strong>the manuscript</strong>, <em>the British Library</em>, also used
+                        <em>ISBD</em>, <em>Descriptive Cataloging of Rare Materials</em> and <em>RDA (Resource
+                            Description and Access)</em>. <br> However, <em>RDA</em> is often used in conjunction with
+                        metadata standards such as <em>MARC 21</em>, <em>MODS</em>, <em>Dublin Core</em>, and others to
+                        create descriptive metadata records for library resources, it is not a metadata standard. As the
+                        provider did not give us any information explicitly about chosen standard for photos, we have
+                        decided to apply the <em>IPTC (standard of the International Press Telecommunications
+                            Council)</em>, which is commonly used for describing news media content, such as images,
+                        videos, and text. The standard includes a variety of metadata fields, including information
+                        about the creator, copyright, location, and keywords. <br> <br>
+                        <strong>The book with translation of the fairy tales</strong> is described in WorldCat, which
+                        uses combination of standards, including <em>MARC 21</em>, <em>RDF</em> and <em>Dublin
+                            Core</em>. <em>MARC 21</em> is used to structure the bibliographic data and provide
+                        controlled access points, while <em>Dublin Core</em> is used to provide basic descriptive
+                        information about the resource. To be more precise, we have chosen MARC 21 standard to describe
+                        three our items: the audiobook, the book about exhibition in honor of <em>Angela Carter</em> and
+                        her autobiography, which are also provided by the <em>WorldCat</em>. <br> <br>
+                        The metadata schema used to describe <strong>the movie</strong> on <em>IMDb (Internet Movie
+                            Database)</em> is commonly referred as the <em>IMDb</em> metadata schema . <br> <br>
+                        <strong>The magazine</strong> is held by the <em>Jisc Library Hub Discover</em> which have not
+                        revealed what kind of metadata standard was used, but we have found information that
+                        <em>Jisc</em> uses aggregation of UK academic, national and specialist library metadata, data
+                        from the <em>Library of Congress</em>, and <em>International Standard Serial Numbers
+                            (ISSN)</em>, therefore we could make an assumption that they used <em>MARC 21</em>, because
+                        it is one of the most widespread in UK libraries and also provided by the Library of Congress.
+                        But assuming that the provider it doesn’t reveal explicitly any information about used standard,
+                        we choose <em>Schema.org</em>, because it provides a flexible and extensible vocabulary for
+                        describing various types of entities on the web, including creative works such as magazines. The
+                        standard includes vocabulary for describing information about magazines, such as their title,
+                        publisher, publication date, genre, and contributors. Using this standard, we could increase the
+                        interoperability with other entities of our project. <br>
+                        Information about <strong>Japan</strong> we have found at the website <em>GeoNames</em>, which
+                        uses GeoNames RDF vocabulary, a standardized system of terms to represent geographic data in a
+                        machine-readable
+                        format according to the Resource Description Framework standards (RDF). We chose
+                        <em>ISO</em>instead,
+                        because it has a wider variety of terms and therefore it's better suited for the alignment
+                        phase.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0 "
+            style="height: auto !important; overflow:hidden; margin: 2rem 0 0;" id="who">
+            <div class="col-lg-12">
+                <div class="text-center h-100 project">
+                    <div class="d-flex h-100" id="tbl">
+                        <div class="project-text w-100">
+                            <div class="table-responsive" id="metadata_analysis">
+                                <table class="table table-bordered table-hover" id="th1">
+                                    <thead>
+                                        <tr>
+                                            <th title="Field #1">Item Title</th>
+                                            <th title="Field #2">Item Type</th>
+                                            <th title="Field #3">Provider</th>
+                                            <th title="Field #4">Metadata standard</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="it1"><a id="link-metadata-an"
+                                                    href="https://opac.sbn.it/risultati-ricerca-avanzata/-/opac-adv/isbd/UBO1487800?monocampo=the+bloody+chamber">The
+                                                    Bloody Chamber</a></td>
+                                            <td>Book</td>
+                                            <td>SBN OPAC</td>
+                                            <td>ISBD</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it2"><a id="link-metadata-an"
+                                                    href="https://www.worldcat.org/it/title/1348949153">Angela
+                                                    Carter: a BBC Radio Drama Collection </a></td>
+                                            <td>Audiobook</td>
+                                            <td>Worldcat</td>
+                                            <td>OCLC-MARC</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it3"><a id="link-metadata-an"
+                                                    href="https://discover.libraryhub.jisc.ac.uk/search?publisher=Spare%20Ribs%20Ltd&isn=0306-7971&rn=1">Spare
+                                                    Rib: The New Women's Magazine </a></td>
+                                            <td>Magazine</td>
+                                            <td>Jisc</td>
+                                            <td>Schema.org</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it4"><a id="link-metadata-an"
+                                                    href="https://www.bl.uk/collection-items/manuscript-notes-and-drafts-of-the-bloody-chamber-by-angela-carter">Manuscript
+                                                    notes and drafts of The Bloody Chamber by Angela Carter </a>
+                                            </td>
+                                            <td>Manuscript</td>
+                                            <td>British Library</td>
+                                            <td>MARC21</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it5"><a id="link-metadata-an"
+                                                    href="https://www.geonames.org/countries/JP/japan.html">Japan</a>
+                                            </td>
+                                            <td>Place</td>
+                                            <td>Geonames.org</td>
+                                            <td>ISO 19115-1:2014(en)</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it6"><a id="link-metadata-an"
+                                                    href="https://www.worldcat.org/title/1008430161">Strange worlds:
+                                                    the vision of Angela Carter</a></td>
+                                            <td>Book</td>
+                                            <td>Worldcat</td>
+                                            <td>MARC21</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it7"><a id="link-metadata-an"
+                                                    href="http://www.mufocosearch.org/dettagliofotografia/SUP-3g040-0000251">The
+                                                    fairy tales of Charles Perrault</a></td>
+                                            <td>Book/translations </td>
+                                            <td>British Library</td>
+                                            <td>MARC21</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it8"><a id="link-metadata-an"
+                                                    href="https://www.imdb.com/title/tt0087075/?ref_=nm_knf_t_1">The
+                                                    Company of Wolves</a></td>
+                                            <td>Movie</td>
+                                            <td>IMDb</td>
+                                            <td>Schema.org</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it9"><a id="link-metadata-an"
+                                                    href="https://www.bl.uk/collection-items/photographs-from-the-company-of-wolves-a-film-by-neil-jordan-and-angela-carter">Photographs
+                                                    from Company of Wolves </a></td>
+                                            <td>Collection of photos</td>
+                                            <td>British Library</td>
+                                            <td>IPTC</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="it10"><a id="link-metadata-an"
+                                                    href="https://www.worldcat.org/it/title/37449658">Shaking a
+                                                    leg</a></td>
+                                            <td>Book/collection of articles </td>
+                                            <td>Worldcat</td>
+                                            <td>ISBD</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="projects-section" style="padding:6rem 0 0rem;">
+        <div class="container">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-12 text-left" id="projt">
+                    <h1 class="text-dark mb-4">Metadata Alignment</h1>
+                </div>
+                <div class="col-xl-12 text-left">
+                    <p>Once the metadata standards were identified, the following step was the alignment. The purpose of
+                        this operation is to observe how different standards define the same properties, specifically
+                        the ones that were used in the Conceptual Map; this is crucial in order to better understand the
+                        meaning of the different terms and to be able to communicate it properly, ultimately allowing
+                        semantic interoperability among organizations. The properties described were divided into four
+                        categories, based on the question they were answering <strong>(What? Where? When? Who?)</strong>
+                        and, therefore, the kind of entity they referred to <strong>(objects and concepts, places, dates
+                            and time-spans, people)</strong>. The standards involved in the alignment are the ones
+                        defined during the metadata analysis; DC and DCTerms were also considered, since they provide
+                        the fundamental categories in the semantic description of entities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="metadata2" style="padding:1rem 0 2rem !important;">
+        <div id="metadata-alignment" class="container tabs wrap">
+            <div class="row ">
+                <div class="col col-sm-12" id="tabs">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
+                                type="button" role="tab" aria-selected="true">WHO</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-where-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-where" type="button" role="tab"
+                                aria-selected="false">WHERE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-when-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-when" type="button" role="tab" aria-selected="false">WHEN</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="btn nav-link" id="nav-what-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-what" type="button" role="tab" aria-selected="false">WHAT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text w-100">
+                                            <h4 class="text-white"><a class="js-scroll-trigger" href="#about1">WHO</a>
+                                            </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Property</th>
+                                                            <th title="Field #2">ISBD</th>
+                                                            <th title="Field #3">MARC21</th>
+                                                            <th title="Field #4">DC/DCterms</th>
+                                                            <th title="Field #5">ISO 19115</th>
+                                                            <th title="Field #6">Schema.org</th>
+                                                            <th title="Field #7">IPTC</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Who was it published by? (has publisher) </td>
+                                                            <td>isbd:P1017</td>
+                                                            <td>260 ##$b</td>
+                                                            <td>dcterms:publisher </td>
+                                                            <td>ISO 10161-1:2014(en), 3.6.125 - publisher</td>
+                                                            <td>schema:publisher </td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Who created it? (has creator) </td>
+                                                            <td>/</td>
+                                                            <td>100 1#$a </td>
+                                                            <td>dcterms:creator </td>
+                                                            <td>ISO 15836-2:2019(en), 3.2.14 - creator </td>
+                                                            <td>schema:creator<br />schema:author<br />schema:director
+                                                            </td>
+                                                            <td>7.6. Creator</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Who translated it? (has translator)</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>ISO 18587:2017(en), 3.3.2 - translator</td>
+                                                            <td>schema:translator</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Who is it held by? (has holding archive)</td>
+                                                            <td>/</td>
+                                                            <td>850 $a</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:holdingArchive</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-where" role="tabpanel" aria-labelledby="nav-where-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text w-100">
+                                            <h4 class="text-white"><a class="js-scroll-trigger" href="#about1">WHERE</a>
+                                            </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Property</th>
+                                                            <th title="Field #2">ISBD</th>
+                                                            <th title="Field #3">MARC21</th>
+                                                            <th title="Field #4">DC/DCterms</th>
+                                                            <th title="Field #5">ISO 19115</th>
+                                                            <th title="Field #6">Schema.org</th>
+                                                            <th title="Field #7">IPTC</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Where was it published? (published in)</td>
+                                                            <td>isbd:P1016</td>
+                                                            <td>260 ##$a</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Where was it created? (created in)</td>
+                                                            <td>isbd:P1019 </td>
+                                                            <td>260 ##$e</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:locationCreated</td>
+                                                            <td>11.21. Location Created</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Where is it held in? (held in)</td>
+                                                            <td>/</td>
+                                                            <td>852 ##$a</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:archivedAt</td>
+                                                            <td>12.1.13. Source</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-when" role="tabpanel" aria-labelledby="nav-when-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text w-100">
+                                            <h4 class="text-white"><a class="js-scroll-trigger" href="#about1">WHEN</a>
+                                            </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead class=>
+                                                        <tr>
+                                                            <th title="Field #1">Property</th>
+                                                            <th title="Field #2">ISBD</th>
+                                                            <th title="Field #3">MARC21</th>
+                                                            <th title="Field #4">DC/DCterms</th>
+                                                            <th title="Field #5">ISO 19115</th>
+                                                            <th title="Field #6">Schema.org</th>
+                                                            <th title="Field #7">IPTC</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>When was it created? (created in)</td>
+                                                            <td>isbd:P1018</td>
+                                                            <td>260 ##$c</td>
+                                                            <td>dcterms:issued</td>
+                                                            <td>/</td>
+                                                            <td>schema:datePublished</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>When was it published? (published in)</td>
+                                                            <td>isbd:P1021</td>
+                                                            <td>260 ##$g</td>
+                                                            <td>dc:created</td>
+                                                            <td>/</td>
+                                                            <td>schema:dateCreated</td>
+                                                            <td>7.10. Date Created</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-what" role="tabpanel" aria-labelledby="nav-what-tab">
+                    <div class="container">
+                        <div class="row justify-content-center no-gutters mb-5 mb-lg-0"
+                            style=" height: auto !important; overflow:hidden; ">
+                            <div class="col-lg-12" id="tableloc">
+                                <div class=" text-center h-100 project" id="tbl">
+                                    <div class="d-flex h-100" id="tbl">
+                                        <div class="project-text w-100">
+                                            <h4 class="text-white"><a class="js-scroll-trigger" href="#about1">WHAT</a>
+                                            </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th title="Field #1">Property</th>
+                                                            <th title="Field #2">ISBD</th>
+                                                            <th title="Field #3">MARC21</th>
+                                                            <th title="Field #4">DC/DCterms</th>
+                                                            <th title="Field #5">ISO 19115</th>
+                                                            <th title="Field #6">Schema.org</th>
+                                                            <th title="Field #7">IPTC</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>What is the language? (has language)</td>
+                                                            <td>/</td>
+                                                            <td>041 - LANGUAGE CODE</td>
+                                                            <td>dc:language</td>
+                                                            <td>/</td>
+                                                            <td>schema:language</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What prize has it won? (has won) </td>
+                                                            <td>/</td>
+                                                            <td>586 - AWARDS NOTE # - Awards</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:awards</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What tales does it include? (includes)</td>
+                                                            <td>isbd:P1042 </td>
+                                                            <td>/</td>
+                                                            <td>dcterm:hasPart</td>
+                                                            <td>/</td>
+                                                            <td>schema:includesObject</td>
+                                                            <td>11.2. Artwork or Object in the Image</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What type does it have? (has type)</td>
+                                                            <td>isbd:P1003</td>
+                                                            <td>06 - Type of record</td>
+                                                            <td>dc:type</td>
+                                                            <td>/</td>
+                                                            <td>schema:additionalType</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the format of it? (has format)</td>
+                                                            <td>/</td>
+                                                            <td>340 - PHYSICAL MEDIUM</td>
+                                                            <td>dcterms:hasFormat</td>
+                                                            <td>/</td>
+                                                            <td>schema:fileFormat</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the frequency of publishing? (has
+                                                                frequency)</td>
+                                                            <td>/</td>
+                                                            <td>310 - CURRENT PUBLICATION FREQUENCY $a - Current
+                                                                publication frequency</td>
+                                                            <td>dcterm:frequency </td>
+                                                            <td>/</td>
+                                                            <td>schema:broadcastFrequency</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the subject of it? (has subject)</td>
+                                                            <td>/</td>
+                                                            <td>520 - SUMMARY, ETC. 0 - Subject</td>
+                                                            <td>dc:subject</td>
+                                                            <td>/</td>
+                                                            <td>schema:about</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the official language? (has official
+                                                                language)</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>ISO 639 - Codes for the representation of names
+                                                                of languages </td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What currency is used? (has currency)</td>
+                                                            <td>/</td>
+                                                            <td>365 - TRADE PRICE $c - Currency code</td>
+                                                            <td>/</td>
+                                                            <td>ISO 4217:2008 - Codes for the representation of
+                                                                currencies and funds</td>
+                                                            <td>schema:currency</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the capital? (has capital)</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>ISO 3166 - Codes for the representation of names
+                                                                of countries and their subdivisions</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What was is based on? (is based on) </td>
+                                                            <td>/</td>
+                                                            <td>/t</td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:isBasedOn</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the genre? (has genre)</td>
+                                                            <td>/</td>
+                                                            <td>655 - INDEX TERM--GENRE/FORM $a - Genre/form
+                                                                data or focus term </td>
+                                                            <td>/</td>
+                                                            <td>/</td>
+                                                            <td>schema:genre</td>
+                                                            <td>11.12. Genre</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the duration? (has duration)</td>
+                                                            <td>isbd:P1055</td>
+                                                            <td>306$a Playing time</td>
+                                                            <td>dcterms:extent</td>
+                                                            <td>/</td>
+                                                            <td>schema:duration</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>What is the title? (has title)</td>
+                                                            <td>isbd:P1004</td>
+                                                            <td>245 $a Title</td>
+                                                            <td>dc:title</td>
+                                                            <td>/</td>
+                                                            <td>schema:name</td>
+                                                            <td>7.25. Title</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer small text-center text-white-50">
+        <div class="container">
+            <p class="copyright-text">&copy; DHDK - ALma Mater Bologna University</p>
+            <p class="copyright-text">This is a non-commercial project for scholarly purposes only.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

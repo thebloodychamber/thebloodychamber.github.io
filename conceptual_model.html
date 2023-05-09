@@ -61,23 +61,21 @@
                     <h1 class="text-dark mb-4">Conceptual Model</h1>
                 </div>
                 <div class="col-xl-12 text-left">
-                    <p>After developing a theoretical model, the next step is to move towards a formal representation of
+                    <p>After developing a theoretical model, the next step was to move towards a formal representation of
                         the domain using an ontological approach. This involves creating a conceptual model by reusing
                         existing schemas, vocabularies, and ontologies. <br> To ensure coherence and consistency, it is
-                        essential to refactor the terms of the theoretical model with those taken from existing models.
-                        A graphical representation of the formalization is necessary to express the conceptualization
-                        activity. Tools such as graffoo can be used to produce a graphical framework for OWL ontologies.
+                        essential to replace the terms of the theoretical model with those taken from existing models.
                         The main ontology chosen in this step of the project were the following: <br>
                     <ul>
                         <li><strong>Schema.org</strong>, an ontology that covers a wide range of topics, including
                             businesses, events, people, products, places, and organizations. It is designed to be
                             compatible with existing standards and technologies, such as RDFa and JSON-LD. It is
                             continually evolving and being updated based on community feedback and emerging trends in
-                            data modelling and web development.</li>
+                            data modelling and web development, so we were able to find in Schema fitting classes and properties to describe various objects and relationships in our domain.</li>
                         <li><strong>FABIO</strong> ontology, that is aligned with the FRBR (Functional Requirements for
                             Bibliographic Records) model and is designed to represent bibliographic information, namely
                             the description of bibliographic entities like books, articles, and journals, as well as
-                            relationships between these entities.</li>
+                            relationships between these entities; it was particularly useful for us in order to describe the short stories included in "The Bloody Chamber".</li>
                         <li><strong>CIDOC-CRM</strong>, an ontology that describes cultural heritage information. It
                             provides a high-level conceptual framework for modelling objects, events, agents, and other
                             entities, and their relationships. It was particularly useful for us in order to accurately
@@ -88,14 +86,15 @@
                             organizations, as well as their attributes and relationships; specifically, we chose
                             DBpedia-OWL to describe places and particular relationships among people.</li>
                         <li><strong>FOAF</strong> is an ontology that is used to describe people and their social
-                            relationships, so we rely on it to describe the people in our domain.</li>
+                            relationships, so we relied on it to describe the people in our domain.</li>
                     </ul>
                     Other fundamental classes, such as the ones describing the type of entity or the creator of a
                     certain work, were chosen from <strong>RDF</strong> and <strong>DCTerms</strong>, two very widely
-                    used ontologies, in order to increase the level of interoperability. <br> Initially during this step
+                    used ontologies, in order to increase the level of interoperability. <br> Initially, during this phase of the project,
                     we searched individually for the ontology terms that we thought were more fitting for describing our
                     items, but in a later stage we were careful to align our choices, with the purpose of creating a
-                    coherent model and facilitating potential queries in our dataset. </p>
+                    coherent model and facilitating potential queries in our dataset. <br> A graphical representation of the formalization is necessary to express the conceptualization
+                    activity. Tools such as Graffoo (Graphical Framework for OWL Ontologies) can be used to produce a graphical framework for OWL ontologies. </p>
                 </div>
             </div>
         </div>

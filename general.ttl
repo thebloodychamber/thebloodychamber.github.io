@@ -1,4 +1,4 @@
-@base <https://w3c.org/thebLODychamber/> .
+@base <https://w3id.org/thebLODychamber/> .
 
 @prefix viaf: <http://viaf.org/viaf/> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
